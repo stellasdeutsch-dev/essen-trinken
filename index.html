@@ -1,0 +1,1598 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Еда и напитки на немецком: 120+ слов с артиклями, озвучкой, склейками, диалогом на рынке и тестом.">
+<meta property="og:title" content="Еда на немецком: по полкам, без зубрёжки">
+<meta property="og:description" content="Еда и напитки на немецком: 120+ слов с артиклями, озвучкой, склейками, диалогом на рынке и тестом.">
+<meta name="theme-color" content="#CFEBFB">
+<link rel="icon" href="media/logo.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Еда на немецком: по полкам, без зубрёжки</title>
+<link rel="preload" href="assets/fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face {font-family: 'Instrument Sans'; font-style: normal; font-weight: 400 700; font-stretch: 100%; font-display: swap; src: url(assets/fonts/instrument-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face {font-family: 'Inter'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(assets/fonts/inter-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face {font-family: 'Inter'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(assets/fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+</style>
+<script defer src="assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{
+  color-scheme:light;
+  --sky:#CFEBFB; --sky-2:#E7F5FE; --sky-3:#A9DAF8;
+  --blue:#4677FF; --blue-d:#2E5FEA; --orange:#F46907; --green:#2A5945; --cream:#FBF1CC;
+  --ink:#0E1116; --ink-2:#2F343C; --mute:#6B717C; --line:rgba(14,17,22,.08);
+  --mint:#EAF5E2; --ice:#E6EEFF; --peach:#FDEBDC; --lemon:#FFF6D6;
+  --f-d:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-l:"Instrument Sans","Inter",system-ui,sans-serif;
+  --gut:16px; --r:22px;
+}
+@media (min-width:760px){:root{--gut:28px;--r:28px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--sky);color:var(--ink);font:400 15px/1.6 var(--f-d);font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
+main{overflow-x:clip;position:relative}
+img,video{max-width:100%;display:block}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:10px}
+.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-.14em}
+.de{font-family:var(--f-l)}
+.der{color:var(--blue)} .die{color:var(--orange)} .das{color:var(--green)}
+.bg-der{background:var(--blue)} .bg-die{background:var(--orange)} .bg-das{background:var(--green)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 10px}
+@media (min-width:760px){.wrap{padding:0 20px}}
+
+/* ---------- atoms ---------- */
+.badge{display:inline-flex;align-items:center;gap:7px;background:#fff;border-radius:99px;padding:5px 12px 5px 9px;font:500 12px/1.2 var(--f-l);color:var(--ink-2);box-shadow:0 1px 0 var(--line),0 6px 18px -10px rgba(30,60,120,.35)}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(70,119,255,.18)}
+.badge.on-blue{background:rgba(255,255,255,.92)}
+.badge.or::before{background:var(--orange);box-shadow:0 0 0 3px rgba(244,105,7,.18)}
+.badge.gr::before{background:var(--green);box-shadow:0 0 0 3px rgba(42,89,69,.18)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:99px;background:var(--ink);color:#fff;font:600 14px/1 var(--f-d);letter-spacing:-.01em;box-shadow:0 10px 24px -12px rgba(14,17,22,.6);transition:scale .25s,background .25s}
+.btn:hover{scale:1.03}
+.btn:active{scale:.97}
+.btn.light{background:#CFE6FF;color:var(--blue-d);box-shadow:none}
+.btn.white{background:#fff;color:var(--ink);box-shadow:0 8px 20px -14px rgba(14,17,22,.5)}
+.btn.orange{background:var(--orange)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px rgba(14,17,22,.18)}
+.btn.sm{min-height:38px;padding:0 16px;font-size:13px}
+.say{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ice);color:var(--blue);flex:none;transition:background .2s,color .2s,scale .2s}
+.say:hover{background:var(--blue);color:#fff}
+.say.on{background:var(--blue);color:#fff;animation:ping 1s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(70,119,255,.45)}100%{box-shadow:0 0 0 12px rgba(70,119,255,0)}}
+.say .ic{width:15px;height:15px}
+.no-tts .say{display:none}
+.chip{display:inline-flex;align-items:center;gap:6px;border-radius:99px;background:#fff;border:1px solid var(--line);padding:5px 11px;font:500 12px/1.2 var(--f-l);color:var(--ink-2)}
+.chip .ic{width:13px;height:13px;color:var(--mute)}
+
+h1,h2,h3{font-family:var(--f-d);font-weight:600;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.h2{font-size:clamp(29px,7.6vw,50px);line-height:1.07}
+.h3{font-size:clamp(21px,5.2vw,28px);line-height:1.15;letter-spacing:-.03em}
+.lead{color:var(--mute);font-size:15px;line-height:1.6;margin:12px 0 0;max-width:560px}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
+.wd{display:inline-block}
+
+/* annotation pill like "• FAQ Section" */
+.anno{position:relative;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.7);border-radius:99px;padding:6px 14px 6px 11px;font:500 13px/1 var(--f-l);color:var(--ink-2);margin-bottom:16px}
+.anno::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.anno b{font-weight:600;color:var(--blue)}
+
+/* board = white slide on sky */
+.board{position:relative;background:#fff;border-radius:var(--r);padding:34px 18px;margin:12px 0;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 20px 50px -38px rgba(20,70,140,.45)}
+@media (min-width:760px){.board{padding:56px 48px;margin:18px 0}}
+.board.sky{background:linear-gradient(180deg,#E9F6FE,#D3ECFB)}
+.board.clear{background:transparent;box-shadow:none;padding-left:4px;padding-right:4px}
+.sec-head{margin-bottom:26px}
+@media (min-width:900px){.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}}
+
+/* ---------- nav ---------- */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border-radius:99px;padding:7px 7px 7px 14px;margin:10px 0 0;box-shadow:0 10px 30px -22px rgba(20,60,130,.5)}
+.logo{display:flex;align-items:center;gap:8px;font:600 15px/1 var(--f-l);letter-spacing:-.01em}
+.logo img{width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid var(--line);object-fit:cover}
+.nav-links{display:none;gap:22px;font:500 13px/1 var(--f-l);color:var(--ink-2)}
+.nav-links a:hover{color:var(--blue)}
+@media (min-width:900px){.nav-links{display:flex}}
+
+/* ---------- phone mockup ---------- */
+.phone{--pw:230px;position:relative;width:var(--pw);aspect-ratio:9/19.2;border-radius:calc(var(--pw)*.19);background:#0E1116;padding:calc(var(--pw)*.035);box-shadow:inset 0 0 0 2px #30353d,0 40px 70px -30px rgba(15,40,95,.55);flex:none}
+.phone .scr{position:relative;height:100%;border-radius:calc(var(--pw)*.155);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.phone .isl{position:absolute;top:calc(var(--pw)*.035);left:50%;translate:-50% 0;width:32%;height:calc(var(--pw)*.085);background:#0E1116;border-radius:20px;z-index:5}
+.sb{display:flex;justify-content:space-between;align-items:center;padding:calc(var(--pw)*.045) calc(var(--pw)*.09) 0;font:600 calc(var(--pw)*.05)/1 var(--f-l);color:var(--ink);position:relative;z-index:4;flex:none}
+.sb .st{display:flex;gap:4px;align-items:center}
+.sb svg{height:calc(var(--pw)*.042);width:auto}
+.sb.w{color:#fff}
+
+/* ---------- hero ---------- */
+.hero{position:relative;margin-top:10px;border-radius:var(--r);overflow:hidden;background:linear-gradient(180deg,#3F74F6 0%,#5E92F8 38%,#9BC9F7 72%,#BDE0FA 100%);color:#fff;text-align:center;padding:34px 18px 0}
+.hero h1{font-size:clamp(34px,9.6vw,66px);line-height:1.03;letter-spacing:-.045em;max-width:860px;margin:16px auto 0}
+.hero .lead{color:rgba(255,255,255,.9);margin:14px auto 0;max-width:520px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.hero-meta .chip{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.3);color:#fff}
+.hero-meta .chip .ic{color:#fff}
+.hero-art{position:relative;height:350px;margin:22px -18px 0}
+@media (min-width:760px){.hero{padding-top:56px}.hero-art{height:470px}}
+.hero-art>svg.land{position:absolute;inset:0;width:100%;height:100%}
+.hero-art .phone{position:absolute;left:50%;top:86px;translate:-50% 0;--pw:224px;z-index:3}
+@media (min-width:760px){.hero-art .phone{--pw:270px;top:110px}}
+.float{position:absolute;z-index:4;background:#fff;color:var(--ink);border-radius:16px;padding:10px 12px;text-align:left;box-shadow:0 18px 40px -22px rgba(15,40,95,.55);font-size:12px;line-height:1.3}
+.float b{display:block;font:600 13px/1.2 var(--f-l)}
+.float small{color:var(--mute);font-size:11px}
+.f-a{left:4%;top:24px}
+.f-b{right:4%;top:150px}
+.f-c,.f-d{display:none}
+@media (min-width:760px){
+  .f-a{left:13%;top:120px}.f-b{right:12%;top:90px}
+  .f-c{display:block;left:9%;top:280px;width:220px}.f-d{display:block;right:8%;top:260px;width:220px}
+}
+.pbar{height:6px;border-radius:9px;background:#EEF1F5;margin:8px 0 6px;position:relative;overflow:hidden}
+.pbar i{position:absolute;inset:0 auto 0 0;border-radius:9px}
+.tag{display:inline-flex;align-items:center;gap:4px;font:500 10px/1 var(--f-l);border-radius:99px;padding:4px 7px}
+.tag::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.cloud{animation:drift 26s linear infinite alternate}
+.cloud.c2{animation-duration:34s}.cloud.c3{animation-duration:21s}
+@keyframes drift{to{translate:60px 0}}
+.blades{animation:spin 5s linear infinite}
+.blades.b2{animation-duration:6.5s}
+@keyframes spin{to{rotate:360deg}}
+.bob{animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{translate:0 -10px}}
+.rotor{animation:rot .18s linear infinite}
+@keyframes rot{50%{scale:.25 1}}
+@media (prefers-reduced-motion:reduce){.cloud,.blades,.bob,.rotor{animation:none}}
+/* hero css intro (before gsap) */
+.hero .badge,.hero h1,.hero .lead,.hero-cta,.hero-meta{animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+.hero h1{animation-delay:.08s}.hero .lead{animation-delay:.16s}.hero-cta{animation-delay:.24s}.hero-meta{animation-delay:.3s}
+.hero-art .phone{animation:rise 1.2s .25s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{translate:0 24px}}
+@keyframes rise{from{translate:-50% 120px}}
+@media (prefers-reduced-motion:reduce){.hero *{animation:none!important}}
+
+/* app screen inside phones */
+.app{flex:1;display:flex;flex-direction:column;font-size:calc(var(--pw)*.046);line-height:1.3;color:var(--ink);text-align:left}
+.app-top{position:relative;background:linear-gradient(180deg,#4C82F7,#8DC3F8);color:#fff;padding:calc(var(--pw)*.06) calc(var(--pw)*.06) 0;margin-top:calc(var(--pw)*-.14);padding-top:calc(var(--pw)*.2)}
+.app-hello{display:flex;align-items:center;gap:8px}
+.app-hello .av{width:calc(var(--pw)*.13);height:calc(var(--pw)*.13);border-radius:50%;background:#FFD7A8;display:grid;place-items:center;font-size:calc(var(--pw)*.07)}
+.app-hello small{display:block;opacity:.85;font-size:.8em}
+.app-hello b{font:600 1.05em/1.1 var(--f-l)}
+.app-hello .bell{margin-left:auto;width:calc(var(--pw)*.12);height:calc(var(--pw)*.12);border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center}
+.app-scene{display:block;width:calc(100% + var(--pw)*.12);margin:8px calc(var(--pw)*-.06) 0;height:calc(var(--pw)*.42)}
+.app-body{padding:calc(var(--pw)*.05);display:flex;flex-direction:column;gap:calc(var(--pw)*.035);background:#F6F8FB;flex:1}
+.stat2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:calc(var(--pw)*-.1);position:relative}
+.stat{background:#fff;border-radius:12px;padding:7px 8px;display:flex;align-items:center;gap:6px;box-shadow:0 6px 14px -10px rgba(0,0,0,.4)}
+.stat i{font-style:normal;font-size:1.3em}
+.stat small{display:block;color:var(--mute);font-size:.78em;line-height:1.1}
+.stat b{font:600 .92em/1.15 var(--f-l)}
+.qa-h{font:600 .95em/1 var(--f-l);margin-top:2px}
+.qa{background:#fff;border-radius:12px;padding:3px 8px}
+.qa div{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px solid var(--line)}
+.qa div:last-child{border:0}
+.qa i{font-style:normal;width:1.9em;height:1.9em;border-radius:50%;display:grid;place-items:center;background:var(--peach);flex:none}
+.qa b{font:600 .9em/1.1 var(--f-l);display:block}
+.qa small{color:var(--mute);font-size:.75em}
+.pts{margin-left:auto;font:600 .72em/1 var(--f-l);color:#B98500;background:#FFF4CC;border-radius:99px;padding:3px 6px;white-space:nowrap}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.tile{border-radius:12px;height:calc(var(--pw)*.28);position:relative;overflow:hidden;font-size:1.9em;display:grid;place-items:center}
+.tile .pts{position:absolute;top:5px;right:5px;font-size:.36em}
+
+/* ---------- story (threads-like phones) ---------- */
+.story{position:relative;overflow:hidden}
+.st-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 18px 26px;margin:0 -18px;scrollbar-width:none}
+.st-track::-webkit-scrollbar{display:none}
+.st-track .phone{--pw:262px;scroll-snap-align:center}
+@media (min-width:900px){.st-track{justify-content:center;overflow:visible;gap:26px;margin:0;padding:6px 0 10px}.st-track .phone{--pw:280px}.st-track .phone:nth-child(2){translate:0 34px}}
+.post{flex:1;padding:calc(var(--pw)*.06) calc(var(--pw)*.07) calc(var(--pw)*.05);display:flex;flex-direction:column;font-size:calc(var(--pw)*.051);line-height:1.42;text-align:left}
+.post-h{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.post-h img{width:calc(var(--pw)*.12);height:calc(var(--pw)*.12);border-radius:50%;background:#fff;border:1px solid var(--line)}
+.post-h b{font:600 1em/1.1 var(--f-l);display:block}
+.post-h small{color:var(--mute);font-size:.78em}
+.post p{margin:0 0 .55em}
+.post .ln{display:block}
+.post-im{position:relative;margin-top:auto;border-radius:14px;overflow:hidden;aspect-ratio:16/10;background:#BFE3FA}
+.post-im svg{position:absolute;inset:0;width:100%;height:100%}
+.post-im em{position:absolute;left:50%;top:48%;translate:-50% -50%;font-style:normal;font-size:calc(var(--pw)*.13);white-space:nowrap;filter:drop-shadow(0 8px 8px rgba(0,0,0,.18))}
+.post-f{margin-top:10px;display:flex;justify-content:space-between;align-items:center;color:var(--mute);font:500 .8em/1 var(--f-l);border-top:1px solid var(--line);padding-top:8px}
+.post-f span{display:flex;gap:10px}
+.dots{display:flex;justify-content:center;gap:6px}
+.dots i{width:7px;height:7px;border-radius:9px;background:rgba(14,17,22,.15);transition:width .3s,background .3s}
+.dots i.on{width:22px;background:var(--ink)}
+@media (min-width:900px){.dots{display:none}}
+
+/* ---------- palette (article colours) ---------- */
+.pal{display:grid;grid-template-columns:repeat(3,1fr);border-radius:18px;overflow:hidden;margin-top:24px}
+.pal .sw{color:#fff;min-height:170px;padding:16px 12px;display:flex;flex-direction:column;justify-content:space-between;text-align:left}
+@media (min-width:760px){.pal .sw{min-height:240px;padding:24px}}
+.pal .sw b{font:600 clamp(26px,7vw,52px)/1 var(--f-l);letter-spacing:-.03em}
+.pal .sw small{font:500 12px/1.3 var(--f-l);opacity:.9}
+.pal .sw span{font:500 13px/1.3 var(--f-d)}
+.pal-ex{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pal-ex button{display:inline-flex;align-items:center;gap:6px;background:#F5F7FA;border-radius:99px;padding:8px 14px 8px 8px;font:500 14px/1 var(--f-l)}
+.pal-ex button i{font-style:normal;font-size:18px}
+.grid12{display:grid;grid-template-columns:repeat(12,1fr);gap:6px;height:56px;margin-top:20px;position:relative}
+.grid12 i{background:var(--cream);border-radius:4px}
+.grid12 i.on{background:var(--blue)}
+
+/* ---------- route stepper (sticky) ---------- */
+.route{position:sticky;top:8px;z-index:30;margin:12px 0}
+.rt-bar{position:relative;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;background:#fff;border-radius:99px;padding:6px;box-shadow:0 14px 34px -20px rgba(20,60,130,.55)}
+.rt-bar::-webkit-scrollbar{display:none}
+.rt-bar a{position:relative;z-index:2;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;padding:10px 14px;border-radius:99px;font:500 13px/1 var(--f-l);color:var(--ink-2);transition:color .3s}
+.rt-bar a::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);transition:background .3s}
+.rt-bar a.on{color:#fff}
+.rt-bar a.on::before{background:#fff}
+.rt-pill{position:absolute;z-index:1;top:6px;bottom:6px;left:0;width:0;border-radius:99px;background:var(--ink)}
+.rt-prog{position:absolute;left:18px;right:18px;bottom:2px;height:2px;border-radius:2px;background:transparent;overflow:hidden}
+.rt-prog i{position:absolute;inset:0;background:var(--orange);transform-origin:left;transform:scaleX(0)}
+
+/* ---------- day arc (verbs) ---------- */
+.day{position:relative;border-radius:20px;overflow:hidden;background:#BFE3FA}
+.day svg{display:block;width:100%;height:auto}
+.day-card{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:#fff;border-radius:18px;padding:14px;margin-top:-34px;position:relative;z-index:2;box-shadow:0 18px 36px -24px rgba(15,40,95,.5);margin-left:10px;margin-right:10px}
+.day-card .t{font:600 22px/1 var(--f-l);letter-spacing:-.02em;background:var(--lemon);border-radius:12px;padding:10px 10px;min-width:72px;text-align:center}
+.day-card b{font:600 17px/1.2 var(--f-l);display:block}
+.day-card small{color:var(--mute);font-size:13px;line-height:1.35;display:block}
+.day-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.day-tabs button{border-radius:99px;padding:8px 13px;background:#F3F5F8;font:500 13px/1 var(--f-l);transition:background .25s,color .25s}
+.day-tabs button.on{background:var(--ink);color:#fff}
+.verbs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:22px}
+@media (min-width:760px){.verbs{grid-template-columns:repeat(3,1fr)}}
+.vb{display:flex;align-items:center;gap:10px;text-align:left;background:#F6F8FB;border-radius:16px;padding:12px;transition:background .2s}
+.vb:hover{background:var(--ice)}
+.vb i{font-style:normal;font-size:22px;width:40px;height:40px;border-radius:12px;background:#fff;display:grid;place-items:center;flex:none}
+.vb b{font:600 15px/1.15 var(--f-l);display:block}
+.vb small{color:var(--mute);font-size:12px;line-height:1.3;display:block}
+.note{display:flex;gap:12px;align-items:flex-start;background:var(--peach);border-radius:18px;padding:14px 16px;margin-top:16px;font-size:14px;line-height:1.5}
+.note .ic{color:var(--orange);width:20px;height:20px;margin-top:1px}
+.note.blue{background:var(--ice)}.note.blue .ic{color:var(--blue)}
+.note.green{background:var(--mint)}.note.green .ic{color:var(--green)}
+.note b{font-weight:600}
+
+/* ---------- builder (Komposita) ---------- */
+.bld{position:relative;background:linear-gradient(180deg,#EAF5FE,#fff);border:1px solid var(--line);border-radius:22px;padding:22px 14px 18px;min-height:300px;text-align:center;overflow:hidden}
+.bld-row{display:flex;align-items:center;justify-content:center;gap:8px;min-height:64px}
+.bc{display:inline-flex;align-items:baseline;gap:6px;background:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 12px 26px -18px rgba(15,40,95,.6);font:600 clamp(16px,4.6vw,22px)/1 var(--f-l);white-space:nowrap}
+.bc .a{font-weight:600}
+.bc .a.lost{color:#B8BEC8!important;text-decoration:line-through}
+.bplus{font:600 22px/1 var(--f-d);color:var(--mute)}
+.barrow{margin:12px auto;width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center}
+.bres{display:inline-flex;align-items:baseline;gap:8px;background:var(--ink);color:#fff;border-radius:18px;padding:14px 20px;font:600 clamp(20px,6vw,30px)/1 var(--f-l);letter-spacing:-.02em}
+.bres .a{display:inline-block}
+.bres .a.der{color:#8FB0FF}.bres .a.die{color:#FFA25C}.bres .a.das{color:#7BD3A8}
+.blit{margin-top:14px;font-size:14px;color:var(--mute);min-height:44px}
+.blit b{color:var(--ink);font-weight:600}
+.bnav{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:8px}
+.bnav .dots i{cursor:pointer}
+.bnav .dots{display:flex}
+.bnav button.r{width:38px;height:38px;border-radius:50%;background:#F3F5F8;display:grid;place-items:center}
+.blist{display:grid;grid-template-columns:1fr;gap:6px;margin-top:16px}
+@media (min-width:760px){.blist{grid-template-columns:1fr 1fr}}
+.blist div{display:flex;justify-content:space-between;gap:8px;align-items:center;background:#F6F8FB;border-radius:12px;padding:9px 12px;font-size:13px}
+.blist b{font:600 14px/1.2 var(--f-l)}
+.blist small{color:var(--mute)}
+
+/* ---------- shelves ---------- */
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:4px 2px 8px;margin:0 -2px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;display:inline-flex;align-items:center;gap:7px;border-radius:99px;padding:10px 15px;background:#fff;border:1px solid var(--line);font:500 13px/1 var(--f-l);transition:background .25s,color .25s,border-color .25s}
+.tabs button span{font-size:16px}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.shelf-head{display:grid;gap:10px;margin:12px 0 14px}
+@media (min-width:760px){.shelf-head{grid-template-columns:1.1fr 1fr;align-items:end}}
+.shelf-head h3{font-size:24px}
+.shelf-head h3 small{font:500 14px/1 var(--f-l);color:var(--mute);margin-left:6px;letter-spacing:0}
+.shelf-head p{margin:0;font-size:14px;color:var(--ink-2);background:var(--mint);border-radius:14px;padding:12px 14px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (min-width:640px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:980px){.cards{grid-template-columns:repeat(4,1fr)}}
+.wc{position:relative;text-align:left;border-radius:18px;padding:12px;background:#F6F8FB;display:flex;flex-direction:column;gap:2px;min-height:150px;transition:background .25s,scale .25s}
+.wc:hover{background:var(--ice)}
+.wc:active{scale:.97}
+.wc .em{width:46px;height:46px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:24px;margin-bottom:8px;box-shadow:0 6px 14px -10px rgba(0,0,0,.35)}
+.wc .em .blob{width:24px;height:24px;border-radius:50%;background:var(--c);box-shadow:inset -4px -4px 0 rgba(0,0,0,.12),inset 3px 3px 0 rgba(255,255,255,.35)}
+.wc .em .berry{position:relative;width:22px;height:22px}
+.wc .em .berry i{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--c)}
+.wc .em .berry i:nth-child(1){left:0;top:8px}.wc .em .berry i:nth-child(2){left:9px;top:2px}.wc .em .berry i:nth-child(3){left:11px;top:11px}
+.wc .w{font:600 16px/1.2 var(--f-l);letter-spacing:-.01em}
+.wc .w .a{margin-right:4px}
+.wc .pl{font:500 12px/1.3 var(--f-l);color:var(--mute)}
+.wc .tr{font-size:12px;color:var(--mute)}
+.wc .ru{font-size:14px;line-height:1.3;margin-top:auto;padding-top:6px;color:var(--ink-2)}
+.wc .say{position:absolute;right:10px;top:10px}
+.wc.lit{background:#fff;box-shadow:0 0 0 2px var(--orange)}
+
+/* ---------- sorter ---------- */
+.sorter{position:relative;background:linear-gradient(180deg,#EAF5FE,#F9FBFD);border:1px solid var(--line);border-radius:22px;padding:18px 12px 14px;overflow:hidden}
+.s-stage{position:relative;height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.s-chip{position:relative;display:inline-flex;align-items:baseline;gap:7px;background:#fff;border-radius:16px;padding:13px 18px;font:600 22px/1 var(--f-l);box-shadow:0 14px 30px -18px rgba(15,40,95,.6);overflow:hidden;z-index:3}
+.s-chip .a{color:#B8BEC8;display:inline-block}
+.s-chip .e{border-radius:6px;padding:0 2px;transition:background .3s,color .3s}
+.s-chip .e.hit{color:#fff}
+.s-beam{position:absolute;top:0;bottom:0;width:30%;left:-30%;background:linear-gradient(90deg,transparent,rgba(70,119,255,.35),transparent)}
+.s-rule{font:500 13px/1.3 var(--f-l);color:var(--ink-2);background:#fff;border-radius:99px;padding:7px 12px;border:1px solid var(--line);min-height:32px}
+.s-rule.but{background:var(--orange);color:#fff;border-color:var(--orange)}
+.baskets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.bk{border-radius:16px;background:#fff;border:1px solid var(--line);padding:10px 8px;min-height:150px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.bk-h{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;border-radius:11px;padding:8px 10px;font:600 15px/1 var(--f-l)}
+.bk-h small{font:600 12px/1 var(--f-l);background:rgba(255,255,255,.25);border-radius:99px;padding:3px 7px}
+.bk-l{display:flex;flex-direction:column;gap:4px;width:100%}
+.bk-l span{font:500 12px/1.2 var(--f-l);background:#F6F8FB;border-radius:8px;padding:5px 6px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+@media (min-width:760px){.rules{grid-template-columns:repeat(4,1fr)}}
+.rule{border-radius:16px;padding:14px;background:#F6F8FB}
+.rule b{font:600 20px/1.1 var(--f-l);display:block;margin-bottom:4px}
+.rule small{font-size:13px;color:var(--ink-2);line-height:1.35;display:block}
+
+/* ---------- apple ---------- */
+.applebox{display:grid;gap:16px;align-items:center}
+@media (min-width:760px){.applebox{grid-template-columns:260px 1fr}}
+.ap-stage{position:relative;border-radius:22px;background:linear-gradient(180deg,#BFE3FA,#E9F6FE);aspect-ratio:1;max-width:280px;width:100%;margin:0 auto;overflow:hidden}
+.ap-stage svg{width:100%;height:100%;display:block}
+#apBody{transition:fill .6s}
+#apGrp{transform-box:fill-box;transform-origin:50% 100%;transition:transform .6s cubic-bezier(.3,1.6,.5,1)}
+#apSpots{transition:opacity .6s}
+.ap-ui .lbl{display:flex;align-items:center;gap:10px}
+.ap-ui .lbl b{font:600 34px/1 var(--f-l);letter-spacing:-.03em}
+.ap-ui .lbl span{color:var(--mute);font-size:15px}
+.ap-ui .sent{margin:10px 0 14px;font:500 17px/1.35 var(--f-l);display:flex;gap:10px;align-items:center}
+.range{width:100%;accent-color:var(--orange);height:28px}
+.ticks{display:flex;justify-content:space-between;font:500 11px/1 var(--f-l);color:var(--mute);margin-top:2px}
+.tastes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px}
+@media (min-width:760px){.tastes{grid-template-columns:repeat(6,1fr)}}
+.taste{text-align:center;background:#F6F8FB;border-radius:16px;padding:12px 6px}
+.taste i{font-style:normal;font-size:26px;display:block}
+.taste b{font:600 15px/1.2 var(--f-l);display:block;margin-top:4px}
+.taste small{color:var(--mute);font-size:12px}
+
+/* ---------- shopping list ---------- */
+.packbox{display:grid;gap:22px;align-items:start}
+@media (min-width:900px){.packbox{grid-template-columns:320px 1fr}}
+.packbox .phone{--pw:270px;margin:0 auto}
+.list-app{flex:1;display:flex;flex-direction:column;background:#F6F8FB;font-size:calc(var(--pw)*.048)}
+.la-h{padding:calc(var(--pw)*.05) calc(var(--pw)*.06) 10px;background:#fff;text-align:left}
+.la-h small{color:var(--mute);font:500 .8em/1 var(--f-l)}
+.la-h b{display:flex;justify-content:space-between;align-items:center;font:600 1.35em/1.2 var(--f-l);letter-spacing:-.02em}
+.cart{position:relative;width:2em;height:2em;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:.8em}
+.cart em{position:absolute;top:-4px;right:-4px;min-width:16px;height:16px;border-radius:9px;background:var(--ink);font:600 10px/16px var(--f-l);font-style:normal;text-align:center;padding:0 3px}
+.la-p{height:5px;border-radius:5px;background:#EEF1F5;margin-top:10px;overflow:hidden}
+.la-p i{display:block;height:100%;width:0;background:var(--orange);border-radius:5px;transition:width .4s}
+.la-l{padding:8px calc(var(--pw)*.05);display:flex;flex-direction:column;gap:5px;text-align:left}
+.li{display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:7px 9px}
+.li .ck{width:1.35em;height:1.35em;border-radius:50%;border:1.5px solid #CDD3DC;display:grid;place-items:center;color:#fff;flex:none;transition:background .3s,border-color .3s}
+.li .ck .ic{width:.85em;height:.85em;opacity:0}
+.li.done .ck{background:var(--green);border-color:var(--green)}
+.li.done .ck .ic{opacity:1}
+.li .em{font-size:1.2em}
+.li b{font:600 .95em/1.15 var(--f-l)}
+.li small{display:block;color:var(--mute);font-size:.78em}
+.li.done b{text-decoration:line-through;text-decoration-color:rgba(14,17,22,.35)}
+.packs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media (min-width:640px){.packs{grid-template-columns:repeat(3,1fr)}}
+.pk{border-radius:16px;padding:12px;background:#F6F8FB;text-align:left;display:flex;flex-direction:column;gap:3px}
+.pk b{font:600 15px/1.2 var(--f-l)}
+.pk small{color:var(--mute);font-size:12px}
+.pk span{font-size:13px;color:var(--ink-2)}
+
+/* ---------- market dialogue ---------- */
+.mk{display:grid;gap:24px;align-items:start}
+@media (min-width:900px){.mk{grid-template-columns:1fr 330px}}
+.mk .phone{--pw:300px;margin:0 auto}
+@media (max-width:360px){.mk .phone{--pw:280px}}
+.dan p{margin:0 0 6px;font-size:16px;line-height:1.5}
+.dan p.gap{margin-top:14px}
+.chat{flex:1;display:flex;flex-direction:column;background:#EEF3F8;font-size:calc(var(--pw)*.047);text-align:left}
+.ch-h{display:flex;align-items:center;gap:8px;background:#fff;padding:8px calc(var(--pw)*.05) 10px;border-bottom:1px solid var(--line)}
+.ch-h i{font-style:normal;width:2.1em;height:2.1em;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-size:1.05em}
+.ch-h b{font:600 1em/1.1 var(--f-l);display:block}
+.ch-h small{color:var(--green);font-size:.78em}
+.ch-l{flex:1;overflow:hidden;padding:10px calc(var(--pw)*.04);display:flex;flex-direction:column;gap:6px;justify-content:flex-end}
+.bub{max-width:84%;border-radius:16px;padding:7px 10px;background:#fff;align-self:flex-start;border-bottom-left-radius:5px;cursor:pointer;box-shadow:0 4px 10px -8px rgba(0,0,0,.3)}
+.bub.me{align-self:flex-end;background:var(--blue);color:#fff;border-bottom-left-radius:16px;border-bottom-right-radius:5px}
+.bub b{font:500 1em/1.3 var(--f-l);display:block}
+.bub small{display:block;font-size:.8em;opacity:.7;line-height:1.3;margin-top:2px}
+.bub.hide{display:none}
+.typing{align-self:flex-start;background:#fff;border-radius:14px;padding:8px 10px;display:none;gap:3px}
+.typing.me{align-self:flex-end;background:var(--blue)}
+.typing.show{display:flex}
+.typing i{width:5px;height:5px;border-radius:50%;background:#9AA3AF;animation:tp 1s infinite}
+.typing.me i{background:#fff}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{50%{translate:0 -3px;opacity:.4}}
+.ch-ctl{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+
+/* ---------- phrases (testimonials) ---------- */
+.tcols{columns:1;column-gap:10px}
+@media (min-width:640px){.tcols{columns:2}}
+@media (min-width:1000px){.tcols{columns:3}}
+.tc{break-inside:avoid;border-radius:18px;padding:16px;margin-bottom:10px;display:flex;flex-direction:column;gap:10px}
+.tc:nth-child(3n+1){background:var(--mint)}.tc:nth-child(3n+2){background:var(--ice)}.tc:nth-child(3n){background:var(--peach)}
+.tc q{quotes:none;font:600 19px/1.25 var(--f-l);letter-spacing:-.015em;display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.tc .ru{font-size:14px;color:var(--ink-2);margin-top:-6px}
+.tc p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-2)}
+.tc q span{flex:1;text-align:left}
+.tc-f{display:flex;align-items:center;gap:9px;padding-top:10px;border-top:1px solid rgba(14,17,22,.07)}
+.tc-f i{font-style:normal;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:18px}
+.tc-f b{font:600 13px/1.2 var(--f-l);display:block}
+.tc-f small{color:var(--mute);font-size:12px}
+.tc-f .rt{margin-left:auto;font:600 13px/1 var(--f-l);display:flex;gap:4px;align-items:center}
+.tc-f .rt .ic{color:#F5B400;fill:#F5B400;width:14px;height:14px}
+
+/* ---------- facts (blog) ---------- */
+.blog-h{display:flex;flex-direction:column;gap:14px;margin-bottom:20px}
+@media (min-width:760px){.blog-h{flex-direction:row;justify-content:space-between;align-items:flex-end}}
+.seg{display:inline-flex;gap:4px;background:#F3F5F8;border-radius:99px;padding:4px;align-self:flex-start}
+.seg button{border-radius:99px;padding:9px 16px;font:500 13px/1 var(--f-l);transition:background .25s,color .25s}
+.seg button.on{background:var(--ink);color:#fff}
+.posts{display:grid;gap:12px}
+@media (min-width:760px){.posts{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.posts{grid-template-columns:repeat(4,1fr)}}
+.pc{border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.pc .im{position:relative;aspect-ratio:16/10;overflow:hidden;background:#BFE3FA}
+.pc .im svg{width:100%;height:100%;display:block}
+.pc .im em{position:absolute;left:50%;top:52%;translate:-50% -50%;font-style:normal;font-size:56px;filter:drop-shadow(0 10px 10px rgba(0,0,0,.18))}
+.pc .bd{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pc h3{font-size:18px;letter-spacing:-.02em;line-height:1.25}
+.pc p{margin:0;font-size:13.5px;line-height:1.5;color:var(--mute)}
+.pc .mt{display:flex;gap:6px;margin-top:auto;padding-top:4px}
+
+/* ---------- quiz ---------- */
+.quiz{position:relative;background:var(--ink);color:#fff;border-radius:22px;padding:22px 16px;overflow:hidden;min-height:330px}
+@media (min-width:760px){.quiz{padding:34px}}
+.qbar{display:flex;gap:5px;margin-bottom:16px}
+.qbar i{flex:1;height:5px;border-radius:5px;background:rgba(255,255,255,.18)}
+.qbar i.cur{background:#fff}.qbar i.ok{background:#4ED08A}.qbar i.bad{background:var(--orange)}
+.qn{margin:0;color:rgba(255,255,255,.6);font:500 13px/1 var(--f-l)}
+.qq{margin:10px 0 16px;font:600 clamp(20px,5.4vw,28px)/1.25 var(--f-l);letter-spacing:-.02em}
+.qq u{text-decoration:none;border-bottom:2px dashed rgba(255,255,255,.6);padding:0 4px}
+.qo{display:grid;gap:8px}
+@media (min-width:640px){.qo{grid-template-columns:repeat(3,1fr)}}
+.qo button{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:14px;padding:14px;font:500 15px/1.3 var(--f-l);text-align:left;transition:background .2s}
+.qo button:hover:not(:disabled){background:rgba(255,255,255,.16)}
+.qo button.ok{background:#1F8F57;border-color:#4ED08A}
+.qo button.bad{background:#9C3A06;border-color:var(--orange)}
+.qx{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:14px;line-height:1.5;color:rgba(255,255,255,.85);background:rgba(255,255,255,.06);border-radius:14px;padding:12px}
+.qx .ic{width:18px;height:18px;margin-top:2px;color:#8FB0FF}
+.qx.bad .ic{color:#FFA25C}
+.qnext{margin-top:14px}
+.qres .score{font:600 64px/1 var(--f-l);letter-spacing:-.04em;display:flex;align-items:center;gap:12px}
+.qres .score .ic{width:44px;height:44px;color:#FFC94D}
+.cta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.conf{position:absolute;left:50%;top:40%;width:9px;height:14px;border-radius:2px;pointer-events:none}
+
+/* ---------- faq ---------- */
+.faq{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 16px;transition:box-shadow .3s}
+.faq details[open]{box-shadow:0 14px 30px -24px rgba(15,40,95,.55)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;font:600 15px/1.35 var(--f-l);cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ic{width:18px;height:18px;flex:none;transition:rotate .3s}
+.faq details[open] summary .ic{rotate:45deg}
+.faq details p{margin:0 0 16px;font-size:14px;line-height:1.6;color:var(--mute)}
+
+/* ---------- cheat ---------- */
+.cheat{display:grid;gap:10px}
+@media (min-width:640px){.cheat{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.cheat{grid-template-columns:repeat(3,1fr)}}
+.ch{border-radius:18px;padding:16px;background:#F6F8FB}
+.ch h3{font-size:17px;letter-spacing:-.02em;display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.ch h3 .ic{color:var(--blue)}
+.ch p{margin:0;font-size:14px;line-height:1.6}
+
+/* ---------- outro / ad shared ---------- */
+.dl{position:relative;border-radius:var(--r);overflow:hidden;background:linear-gradient(180deg,#3F74F6,#7FB3F8 60%,#BDE0FA);color:#fff;padding:36px 18px 0;margin:12px 0}
+@media (min-width:760px){.dl{padding:56px 48px 0}}
+.dl .lead{color:rgba(255,255,255,.9)}
+.dl-art{position:relative;height:300px;margin:26px -18px 0}
+@media (min-width:760px){.dl-art{height:380px;margin:30px -48px 0}}
+.dl-art svg.land{position:absolute;inset:0;width:100%;height:100%}
+.foot{text-align:center;color:var(--mute);font:500 13px/1.6 var(--f-l);padding:26px 0 110px}
+.foot a{color:var(--blue)}
+
+/* ---------- AD ---------- */
+.plat .h2{color:#fff}
+.dl-art .phone{position:absolute;left:50%;top:40px;translate:-50% 0;--pw:230px;z-index:3}
+.dl-art .phone .scr{background:#fff}
+.dl-art .phone video{width:100%;height:auto}
+.pains{display:grid;gap:10px}
+@media (min-width:760px){.pains{grid-template-columns:repeat(2,1fr)}}
+.pain{border-radius:18px;padding:16px;background:#F6F8FB;display:flex;gap:12px;align-items:flex-start}
+.pain i{font-style:normal;font-size:24px;width:46px;height:46px;border-radius:14px;background:#fff;display:grid;place-items:center;flex:none}
+.pain b{font:600 16px/1.25 var(--f-l);display:block;margin-bottom:4px}
+.pain p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-2)}
+.feat{display:grid;gap:12px}
+@media (min-width:900px){.feat{grid-template-columns:repeat(3,1fr)}}
+.fc{border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.fc .im{background:linear-gradient(180deg,#BFE3FA,#E9F6FE);padding:14px 14px 0;display:flex;justify-content:center;align-items:flex-end;aspect-ratio:16/11;overflow:hidden}
+.fc .im .lap{width:100%;border-radius:10px 10px 0 0;overflow:hidden;background:#0E1116;padding:6px 6px 0;box-shadow:0 18px 30px -20px rgba(0,0,0,.6)}
+.fc .im .lap video,.fc .im .lap img{border-radius:6px 6px 0 0;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.fc .im .phone{--pw:150px;translate:0 30%}
+.fc .im .phone video{width:100%;height:100%;object-fit:cover}
+.fc .bd{padding:16px}
+.fc:nth-child(1) .bd{background:var(--mint)}.fc:nth-child(2) .bd{background:var(--ice)}.fc:nth-child(3) .bd{background:var(--peach)}
+.fc h3{font-size:18px;letter-spacing:-.02em;margin-bottom:6px}
+.fc p{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:22px}
+@media (min-width:760px){.nums{grid-template-columns:repeat(4,1fr)}}
+.num{border-radius:18px;padding:16px;background:#F6F8FB}
+.num b{font:600 34px/1 var(--f-l);letter-spacing:-.04em;display:block}
+.num small{color:var(--mute);font-size:13px;line-height:1.35;display:block;margin-top:6px}
+.lvl{border-radius:20px;background:#fff;border:1px solid var(--line);padding:16px;margin-top:22px}
+.lvl-h{display:flex;justify-content:space-between;align-items:center;font:600 14px/1 var(--f-l)}
+.lvl-h span{display:inline-flex;align-items:center;gap:6px}
+.lvl-h span::before{content:"🏅"}
+.lvl-h a{font:500 12px/1 var(--f-l);color:var(--blue)}
+.lvl .big{font:600 40px/1 var(--f-l);letter-spacing:-.04em;margin:12px 0 0;display:flex;align-items:baseline;gap:8px}
+.lvl .big small{font:500 13px/1 var(--f-l);color:var(--mute);letter-spacing:0}
+.lvl .bar{height:9px;border-radius:9px;background:#F0F2F5;margin:12px 0;position:relative;overflow:hidden}
+.lvl .bar i{position:absolute;inset:0;background:linear-gradient(90deg,var(--orange),#FF9A4D);border-radius:9px;transform-origin:left;transform:scaleX(.08)}
+.lvl-steps{display:flex;justify-content:space-between;font:600 12px/1 var(--f-l);color:var(--mute)}
+.lvl-steps span.on{color:var(--orange)}
+.lvl-btn{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.revs{display:grid;gap:10px}
+@media (min-width:900px){.revs{grid-template-columns:repeat(3,1fr)}}
+.rv{border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.rv:nth-child(1){background:var(--mint)}.rv:nth-child(2){background:var(--ice)}.rv:nth-child(3){background:var(--peach)}
+.rv p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink-2)}
+.rv details summary{cursor:pointer;font:500 12px/1 var(--f-l);color:var(--blue);list-style:none;margin-top:auto}
+.rv details summary::-webkit-details-marker{display:none}
+.rv details img{margin-top:10px;border-radius:12px}
+.rv-f{display:flex;align-items:center;gap:9px;padding-top:10px;border-top:1px solid rgba(14,17,22,.07)}
+.rv-f i{font-style:normal;width:36px;height:36px;border-radius:50%;background:#5FA8F5;color:#fff;display:grid;place-items:center;font:600 15px/1 var(--f-l)}
+.rv-f b{font:600 13px/1.2 var(--f-l);display:block}
+.rv-f small{color:var(--mute);font-size:12px}
+.prices{display:grid;gap:10px}
+@media (min-width:900px){.prices{grid-template-columns:1fr 1.15fr 1fr;align-items:center}}
+.pr{border-radius:22px;padding:20px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.pr .lv{font:600 14px/1 var(--f-l);color:var(--mute)}
+.pr .pz{font:600 46px/1 var(--f-l);letter-spacing:-.04em}
+.pr .pz s{font-size:20px;color:var(--mute);font-weight:500;margin-left:6px}
+.pr ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px;font-size:14px}
+.pr li{display:flex;gap:8px;align-items:flex-start}
+.pr li .ic{color:var(--green);margin-top:3px}
+@media (max-width:899px){.pr.main{order:-1}}
+.pr.main{background:var(--ink);color:#fff;border-color:var(--ink);padding:26px 22px}
+.pr.main .lv{color:rgba(255,255,255,.6)}
+.pr.main li .ic{color:#4ED08A}
+.pr.main .tag{background:var(--orange);color:#fff;align-self:flex-start}
+.pr.main .tag::before{background:#fff}
+.pr .btn{margin-top:6px}
+.ask{text-align:center;margin-top:16px;font-size:14px;color:var(--mute)}
+.ask a{color:var(--blue);font-weight:600}
+.dock{position:fixed;left:10px;right:10px;bottom:10px;z-index:60;display:flex;align-items:center;gap:10px;justify-content:space-between;background:var(--ink);color:#fff;border-radius:99px;padding:8px 8px 8px 18px;box-shadow:0 18px 40px -16px rgba(0,0,0,.6);translate:0 140%;transition:translate .5s cubic-bezier(.2,.8,.2,1);max-width:560px;margin:0 auto}
+.dock.show{translate:0 0}
+.dock b{font:600 14px/1.2 var(--f-l);display:block}
+.dock small{color:rgba(255,255,255,.65);font-size:12px}
+.dock .btn{background:var(--orange);min-height:42px}
+</style>
+
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+<symbol id="i-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-rotate-ccw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+<symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></symbol>
+<symbol id="i-scan-line" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+<symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+<symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+<symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+<symbol id="i-shopping-basket" viewBox="0 0 24 24"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></symbol>
+<symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></symbol>
+<symbol id="i-wheat" viewBox="0 0 24 24"><path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/></symbol>
+<symbol id="i-milk" viewBox="0 0 24 24"><path d="M8 2h8"/><path d="M9 2v2.789a4 4 0 0 1-.672 2.219l-.656.984A4 4 0 0 0 7 10.212V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-9.789a4 4 0 0 0-.672-2.219l-.656-.984A4 4 0 0 1 15 4.788V2"/><path d="M7 15a6.472 6.472 0 0 1 5 0 6.47 6.47 0 0 0 5 0"/></symbol>
+<symbol id="i-fish" viewBox="0 0 24 24"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"/><path d="M18 12v.5"/><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86"/><path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33"/><path d="M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4"/><path d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98"/></symbol>
+<symbol id="i-beef" viewBox="0 0 24 24"><circle cx="12.5" cy="8.5" r="2.5"/><path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2Z"/><path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"/></symbol>
+<symbol id="i-candy" viewBox="0 0 24 24"><path d="m9.5 7.5-2 2a4.95 4.95 0 1 0 7 7l2-2a4.95 4.95 0 1 0-7-7Z"/><path d="M14 6.5v10"/><path d="M10 7.5v10"/><path d="m16 7 1-5 1.37.68A3 3 0 0 0 19.7 3H21v1.3c0 .46.1.92.32 1.33L22 7l-5 1"/><path d="m8 17-1 5-1.37-.68A3 3 0 0 0 4.3 21H3v-1.3a3 3 0 0 0-.32-1.33L2 17l5-1"/></symbol>
+<symbol id="i-cup-soda" viewBox="0 0 24 24"><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8"/><path d="M5 8h14"/><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0"/><path d="m12 8 1-6h2"/></symbol>
+<symbol id="i-carrot" viewBox="0 0 24 24"><path d="M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46"/><path d="M22 9s-1.33-2-3.5-2C16.86 7 15 9 15 9s1.33 2 3.5 2S22 9 22 9z"/><path d="M15 2s-2 1.33-2 3.5S15 9 15 9s2-1.84 2-3.5C17 3.33 15 2 15 2z"/></symbol>
+<symbol id="i-cherry" viewBox="0 0 24 24"><path d="M2 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z"/><path d="M12 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z"/><path d="M7 14c3.22-2.91 4.29-8.75 5-12 1.66 2.38 4.94 9 5 12"/><path d="M22 9c-4.29 0-7.14-2.33-10-7 5.71 0 10 4.67 10 7Z"/></symbol>
+<symbol id="i-croissant" viewBox="0 0 24 24"><path d="m4.6 13.11 5.79-3.21c1.89-1.05 4.79 1.78 3.71 3.71l-3.22 5.81C8.8 23.16.79 15.23 4.6 13.11Z"/><path d="m10.5 9.5-1-2.29C9.2 6.48 8.8 6 8 6H4.5C2.79 6 2 6.5 2 8.5a7.71 7.71 0 0 0 2 4.83"/><path d="M8 6c0-1.55.24-4-2-4-2 0-2.5 2.17-2.5 4"/><path d="m14.5 13.5 2.29 1c.73.3 1.21.7 1.21 1.5v3.5c0 1.71-.5 2.5-2.5 2.5a7.71 7.71 0 0 1-4.83-2"/><path d="M18 16c1.55 0 4-.24 4 2 0 2-2.17 2.5-4 2.5"/></symbol>
+<symbol id="i-ice-cream-cone" viewBox="0 0 24 24"><path d="m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11"/><path d="M17 7A5 5 0 0 0 7 7"/><path d="M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4"/></symbol>
+<symbol id="i-wine" viewBox="0 0 24 24"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></symbol>
+<symbol id="i-egg" viewBox="0 0 24 24"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></symbol>
+<symbol id="i-soup" viewBox="0 0 24 24"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M7 21h10"/><path d="M19.5 12 22 6"/><path d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62"/><path d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62"/><path d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62"/></symbol>
+<symbol id="i-grape" viewBox="0 0 24 24"><path d="M22 5V2l-5.89 5.89"/><circle cx="16.6" cy="15.89" r="3"/><circle cx="8.11" cy="7.4" r="3"/><circle cx="12.35" cy="11.65" r="3"/><circle cx="13.91" cy="5.85" r="3"/><circle cx="18.15" cy="10.09" r="3"/><circle cx="6.56" cy="13.2" r="3"/><circle cx="10.8" cy="17.44" r="3"/><circle cx="5" cy="19" r="3"/></symbol>
+
+<symbol id="sb-sig" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="currentColor"/><rect x="5" y="5" width="3" height="7" rx="1" fill="currentColor"/><rect x="10" y="2.5" width="3" height="9.5" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/></symbol>
+<symbol id="sb-wifi" viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0L8 11.5ZM3.4 6.8a6.6 6.6 0 0 1 9.2 0l-1.3 1.3a4.7 4.7 0 0 0-6.6 0L3.4 6.8ZM1 4.4a10 10 0 0 1 14 0l-1.3 1.3a8.1 8.1 0 0 0-11.4 0L1 4.4Z" fill="currentColor"/></symbol>
+<symbol id="sb-bat" viewBox="0 0 27 12"><rect x=".5" y=".5" width="22" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="19" height="8" rx="2" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="1" fill="currentColor" opacity=".45"/></symbol>
+<symbol id="cloud" viewBox="0 0 120 50"><path d="M18 46c-9 0-16-6-16-14 0-7 6-13 14-13 2-10 11-17 22-17 9 0 17 5 20 13 3-2 7-3 11-3 11 0 20 8 21 18h2c8 0 15 6 15 13 0 2-1 3-3 3H18Z" fill="#fff"/></symbol>
+<symbol id="pretzel" viewBox="-20 -20 40 40"><path d="M-11 9C-22-2-14-17 0-5 14-17 22-2 11 9 6 14-6 14-11 9ZM-8 11 6-4M8 11-6-4" fill="none" stroke="#B5652B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="#fff"><circle cx="-12" cy="-5" r="1"/><circle cx="12" cy="-6" r="1"/><circle cx="1" cy="10" r="1"/><circle cx="-5" cy="8" r=".8"/></g></symbol>
+</defs>
+</svg>
+
+<main>
+<div class="wrap">
+
+<nav class="nav" aria-label="Навигация">
+  <a class="logo" href="#top"><img src="media/logo.webp" alt="" width="28" height="28">Stellas</a>
+  <div class="nav-links"><a href="#verbs">Глаголы</a><a href="#shelves">Полки</a><a href="#gender">Род</a><a href="#market">Рынок</a><a href="#quiz">Тест</a></div>
+  <a class="btn sm" href="#platform">Платформа · 30 €</a>
+  
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <span class="badge on-blue">Лексика A1–B1 · Еда и напитки</span>
+  <h1 class="split-h">Еда на немецком. Просто, вкусно и по полкам</h1>
+  <p class="lead">Я пошёл за сметаной и купил сливки для взбивания. С вами такого не будет. Раскладываем еду как в супермаркете: 120+ слов, озвучка и тест.</p>
+  <div class="hero-cta">
+    <a class="btn white" href="#story">Начать <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+    <a class="btn" href="#platform">300+ таких гайдов</a>
+    
+  </div>
+  <div class="hero-meta">
+    <span class="chip"><svg class="ic"><use href="#i-clock"/></svg>12 минут</span>
+    <span class="chip"><svg class="ic"><use href="#i-volume-2"/></svg>Всё с озвучкой</span>
+    <span class="chip"><svg class="ic"><use href="#i-trophy"/></svg>Тест из 6 вопросов</span>
+  </div>
+
+  <div class="hero-art">
+    <svg class="land" viewBox="0 0 1200 470" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <circle cx="960" cy="110" r="46" fill="#FFF7D6" opacity=".85"/>
+      <use href="#cloud" class="cloud" x="120" y="40" width="150" height="62"/>
+      <use href="#cloud" class="cloud c2" x="420" y="90" width="110" height="46"/>
+      <use href="#cloud" class="cloud c3" x="760" y="30" width="170" height="70"/>
+      <use href="#cloud" class="cloud" x="1010" y="170" width="120" height="50"/>
+      <path d="M0 330 120 240 215 290 330 200 450 280 560 220 680 290 800 205 930 280 1050 225 1200 290V470H0Z" fill="#5E95DA" opacity=".45"/>
+      <path d="M0 350C150 292 300 322 420 306 560 288 650 322 780 300 920 280 1060 318 1200 298V470H0Z" fill="#83C76B"/>
+      <!-- turbines -->
+      <g><rect x="168" y="200" width="5" height="128" fill="#fff"/><g class="blades" style="transform-origin:170.5px 200px"><path d="M170.5 200 166 140h9Z" fill="#fff"/><path d="M170.5 200 166 140h9Z" fill="#fff" transform="rotate(120 170.5 200)"/><path d="M170.5 200 166 140h9Z" fill="#fff" transform="rotate(240 170.5 200)"/></g><circle cx="170.5" cy="200" r="6" fill="#F46907"/></g>
+      <g><rect x="262" y="226" width="4" height="100" fill="#fff"/><g class="blades b2" style="transform-origin:264px 226px"><path d="M264 226 260.5 180h7Z" fill="#fff"/><path d="M264 226 260.5 180h7Z" fill="#fff" transform="rotate(120 264 226)"/><path d="M264 226 260.5 180h7Z" fill="#fff" transform="rotate(240 264 226)"/></g><circle cx="264" cy="226" r="5" fill="#F46907"/></g>
+      <path d="M0 392C180 350 330 370 470 360 640 348 760 380 900 355 1020 335 1120 360 1200 350V470H0Z" fill="#4E9F52"/>
+      <!-- market stall -->
+      <g>
+        <rect x="372" y="250" width="7" height="116" fill="#8A4B22"/><rect x="524" y="250" width="7" height="116" fill="#8A4B22"/>
+        <rect x="356" y="236" width="190" height="30" fill="#F46907"/>
+        <g fill="#fff"><rect x="387" y="236" width="32" height="30"/><rect x="451" y="236" width="32" height="30"/><rect x="515" y="236" width="31" height="30"/></g>
+        <g><circle cx="372" cy="266" r="16" fill="#F46907"/><circle cx="403" cy="266" r="16" fill="#fff"/><circle cx="435" cy="266" r="16" fill="#F46907"/><circle cx="467" cy="266" r="16" fill="#fff"/><circle cx="499" cy="266" r="16" fill="#F46907"/><circle cx="530" cy="266" r="16" fill="#fff"/></g>
+        <rect x="420" y="210" width="64" height="22" rx="6" fill="#fff"/><text x="452" y="226" text-anchor="middle" font-family="Instrument Sans,Inter,sans-serif" font-weight="700" font-size="12" fill="#2A5945">MARKT</text>
+        <rect x="362" y="322" width="178" height="48" rx="4" fill="#C9783B"/><rect x="362" y="336" width="178" height="34" fill="#E09A55"/>
+        <rect x="372" y="306" width="46" height="18" rx="3" fill="#A0612E"/><g fill="#E53935"><circle cx="381" cy="304" r="7"/><circle cx="395" cy="302" r="7"/><circle cx="409" cy="304" r="7"/></g>
+        <rect x="428" y="306" width="46" height="18" rx="3" fill="#A0612E"/><g fill="#FF9F1C"><circle cx="437" cy="304" r="7"/><circle cx="451" cy="302" r="7"/><circle cx="465" cy="304" r="7"/></g>
+        <rect x="484" y="306" width="46" height="18" rx="3" fill="#A0612E"/><g fill="#7CB342"><circle cx="493" cy="304" r="7"/><circle cx="507" cy="302" r="7"/><circle cx="521" cy="304" r="7"/></g>
+        <use href="#pretzel" x="380" y="340" width="30" height="30"/><use href="#pretzel" x="490" y="340" width="30" height="30"/>
+      </g>
+      <!-- greenhouse -->
+      <g opacity=".95"><path d="M960 300 1010 255 1060 300Z" fill="#BDEBD3" stroke="#fff" stroke-width="3"/><rect x="960" y="300" width="100" height="62" fill="#C9F0DA" stroke="#fff" stroke-width="3"/><path d="M993 300v62M1027 300v62M960 330h100" stroke="#fff" stroke-width="2"/></g>
+      <!-- drone with pretzel -->
+      <g class="bob"><g transform="translate(790 150)">
+        <path d="M-46-6h92" stroke="#2D2F36" stroke-width="5" stroke-linecap="round"/>
+        <ellipse class="rotor" cx="-46" cy="-12" rx="22" ry="4" fill="#9AA3AF" style="transform-origin:-46px -12px"/>
+        <ellipse class="rotor" cx="46" cy="-12" rx="22" ry="4" fill="#9AA3AF" style="transform-origin:46px -12px"/>
+        <rect x="-18" y="-12" width="36" height="20" rx="9" fill="#F46907"/><circle cx="0" cy="-2" r="5" fill="#2D2F36"/>
+        <path d="M0 8v34" stroke="#2D2F36" stroke-width="1.6"/>
+        <use href="#pretzel" x="-20" y="34" width="40" height="40"/>
+      </g></g>
+      <!-- field + foreground -->
+      <path d="M480 470 560 400h80l80 70Z" fill="#F3C24F"/><path d="M520 470 575 400h10l-25 70ZM600 400h10l35 70h-15ZM630 400h-5l55 70h-12Z" fill="#E4A93A"/>
+      <path d="M0 420C90 400 170 420 250 470H0Z" fill="#2A5945"/><path d="M1200 410C1110 395 1020 420 940 470h260Z" fill="#2A5945"/>
+      <g fill="#2F7D3B"><circle cx="60" cy="420" r="26"/><circle cx="100" cy="428" r="22"/><circle cx="1140" cy="418" r="28"/><circle cx="1100" cy="430" r="20"/><circle cx="330" cy="400" r="18"/><circle cx="356" cy="404" r="14"/><circle cx="880" cy="396" r="16"/></g>
+    </svg>
+
+    <div class="float f-a bob"><b><span class="der">der</span> Apfel</b><small>яблоко · 🔊 tap</small></div>
+    <div class="float f-b bob" style="animation-delay:-1.5s"><b><span class="die">die</span> Brezel</b><small>крендель</small></div>
+    <div class="float f-c"><b>Obst & Gemüse</b><small>26 слов · с озвучкой</small><div class="pbar"><i style="width:62%;background:#F5B400"></i></div><span class="tag" style="color:#B98500;background:#FFF4CC">в процессе</span></div>
+    <div class="float f-d"><b>Getränke</b><small>11 слов · Kaffee, Tee, Schorle</small><div class="pbar"><i style="width:40%;background:var(--blue)"></i></div><span class="tag" style="color:var(--blue);background:var(--ice)">в процессе</span></div>
+
+    <div class="phone" aria-hidden="true">
+      <div class="scr">
+        <div class="isl"></div>
+        <div class="sb w"><span>9:41</span><span class="st"><svg viewBox="0 0 18 12"><use href="#sb-sig"/></svg><svg viewBox="0 0 16 12"><use href="#sb-wifi"/></svg><svg viewBox="0 0 27 12"><use href="#sb-bat"/></svg></span></div>
+        <div class="app">
+          <div class="app-top">
+            <div class="app-hello"><span class="av">🧑‍🍳</span><span><small>Hallo, willkommen zurück</small><b>Hungriger Student</b></span><span class="bell"><svg class="ic"><use href="#i-bell"/></svg></span></div>
+            <svg class="app-scene" viewBox="0 0 300 120" preserveAspectRatio="xMidYMax slice"><use href="#cloud" x="20" y="10" width="70" height="30"/><use href="#cloud" x="190" y="24" width="60" height="26"/><path d="M0 80C60 56 120 70 170 62 220 54 260 66 300 60V120H0Z" fill="#83C76B"/><path d="M0 98C70 84 140 94 200 88 250 84 280 92 300 90V120H0Z" fill="#4E9F52"/><g transform="translate(150 66)"><rect x="-34" y="-8" width="68" height="14" fill="#F46907"/><rect x="-22" y="-8" width="11" height="14" fill="#fff"/><rect x="0" y="-8" width="11" height="14" fill="#fff"/><rect x="-30" y="6" width="60" height="24" fill="#E09A55"/><circle cx="-18" cy="6" r="5" fill="#E53935"/><circle cx="-6" cy="5" r="5" fill="#E53935"/><circle cx="8" cy="6" r="5" fill="#FF9F1C"/><circle cx="20" cy="5" r="5" fill="#7CB342"/></g></svg>
+          </div>
+          <div class="app-body">
+            <div class="stat2"><div class="stat"><i>🧊</i><span><small>Kühlschrank</small><b>fast leer</b></span></div><div class="stat"><i>☀️</i><span><small>Wetter</small><b>Grillwetter 28°</b></span></div></div>
+            <div class="qa-h">Schnellaktionen</div>
+            <div class="qa"><div><i>📝</i><span><b>Einkaufsliste</b><small>7 Produkte offen</small></span><span class="pts">+25 pts</span></div><div><i>🍕</i><span><b>Bestellen</b><small>Pizza oder Döner?</small></span><span class="pts">+25 pts</span></div></div>
+            <div class="qa-h">Kategorie wählen</div>
+            <div class="tiles"><div class="tile" style="background:#E7F6DD">🍎<span class="pts">Obst</span></div><div class="tile" style="background:#FDEBDC">🥨<span class="pts">Brot</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STORY ============ -->
+<section class="board sky story" id="story">
+  <div class="sec-head center">
+    <span class="anno">История · 3 части</span>
+    <h2 class="h2 split-h">Как я купил сметану в Spar</h2>
+    <p class="lead">Короткая история. Вся тема в ней уже спрятана.</p>
+  </div>
+  <div class="st-track" id="stTrack">
+    <div class="phone"><div class="scr"><div class="isl"></div>
+      <div class="sb"><span>9:41</span><span class="st"><svg viewBox="0 0 18 12"><use href="#sb-sig"/></svg><svg viewBox="0 0 16 12"><use href="#sb-wifi"/></svg><svg viewBox="0 0 27 12"><use href="#sb-bat"/></svg></span></div>
+      <div class="post">
+        <div class="post-h"><img src="media/logo.webp" alt=""><span><b>stellas</b><small>Graz · 1 / 3</small></span></div>
+        <p><span class="ln">Я переехал в Австрию.</span><span class="ln">Первый поход в Spar. Хочу сварить борщ.</span></p>
+        <p><span class="ln">Список на русском. Думаю, разберусь.</span></p>
+        <p><span class="ln">Стою у молочки. Двадцать белых стаканчиков.</span><span class="ln de"><b>Sahne. Schlagsahne. Schmand. Quark.</b></span></p>
+        <p><span class="ln">Беру <b class="de">Schlagsahne</b>. Слово длинное. Значит, серьёзное.</span></p>
+        <div class="post-im"><svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cloud" x="24" y="20" width="80" height="34"/><use href="#cloud" x="210" y="38" width="64" height="27"/><path d="M0 150C70 126 150 140 210 132 260 126 300 134 320 130V200H0Z" fill="#83C76B"/><path d="M0 172C80 160 170 168 240 164 290 160 310 166 320 164V200H0Z" fill="#4E9F52"/></svg><em>🥛🧈🧀</em></div><div class="post-f"><span>♡ 214 &nbsp; 💬 31</span><span>1 / 3</span></div>
+      </div></div></div>
+    <div class="phone"><div class="scr"><div class="isl"></div>
+      <div class="sb"><span>9:41</span><span class="st"><svg viewBox="0 0 18 12"><use href="#sb-sig"/></svg><svg viewBox="0 0 16 12"><use href="#sb-wifi"/></svg><svg viewBox="0 0 27 12"><use href="#sb-bat"/></svg></span></div>
+      <div class="post">
+        <div class="post-h"><img src="media/logo.webp" alt=""><span><b>stellas</b><small>Graz · 2 / 3</small></span></div>
+        <p><span class="ln">Дома варю борщ. Открываю стаканчик.</span><span class="ln">Оно льётся. Сметана так не льётся.</span></p>
+        <p><span class="ln">Лью всё равно. Борщ стал розовым. Как молочный коктейль.</span></p>
+        <p><span class="ln">Иду обратно в Spar.</span></p>
+        <p><span class="ln">Говорю продавщице, мне сметану. Она говорит, <b class="de">was?</b></span><span class="ln">Говорю, сметана. Белая. Для супа.</span></p>
+        <div class="post-im" style="background:#FAD4DC"><svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cloud" x="24" y="20" width="80" height="34"/><use href="#cloud" x="210" y="38" width="64" height="27"/><path d="M0 150C70 126 150 140 210 132 260 126 300 134 320 130V200H0Z" fill="#83C76B"/><path d="M0 172C80 160 170 168 240 164 290 160 310 166 320 164V200H0Z" fill="#4E9F52"/></svg><em>🍲</em></div><div class="post-f"><span>♡ 214 &nbsp; 💬 31</span><span>2 / 3</span></div>
+      </div></div></div>
+    <div class="phone"><div class="scr"><div class="isl"></div>
+      <div class="sb"><span>9:41</span><span class="st"><svg viewBox="0 0 18 12"><use href="#sb-sig"/></svg><svg viewBox="0 0 16 12"><use href="#sb-wifi"/></svg><svg viewBox="0 0 27 12"><use href="#sb-bat"/></svg></span></div>
+      <div class="post">
+        <div class="post-h"><img src="media/logo.webp" alt=""><span><b>stellas</b><small>Graz · 3 / 3</small></span></div>
+        <p><span class="ln">Она говорит, <b class="de">ah, saure Sahne.</b></span><span class="ln">Показывает. Та же полка. Соседний ряд.</span></p>
+        <p><span class="ln"><b class="de">Schlag</b> это удар. Сливки, которые бьют венчиком.</span><span class="ln"><b class="de">Saure Sahne</b> это кислые сливки. То есть сметана.</span></p>
+        <p><span class="ln">Немцы просто называют вещи как есть.</span></p>
+        <p><span class="ln">Розовый борщ я доел.</span></p>
+        <div class="post-im" style="background:#FFF1C9"><svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cloud" x="24" y="20" width="80" height="34"/><use href="#cloud" x="210" y="38" width="64" height="27"/><path d="M0 150C70 126 150 140 210 132 260 126 300 134 320 130V200H0Z" fill="#83C76B"/><path d="M0 172C80 160 170 168 240 164 290 160 310 166 320 164V200H0Z" fill="#4E9F52"/></svg><em>🥄🙂</em></div><div class="post-f"><span>♡ 214 &nbsp; 💬 31</span><span>3 / 3</span></div>
+      </div></div></div>
+  </div>
+  <div class="dots" id="stDots"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<!-- ============ PALETTE ============ -->
+<section class="board">
+  <span class="anno">Цвета артиклей</span>
+  <h2 class="h2 split-h">Договоримся о цветах. Один раз</h2>
+  <p class="lead">Каждое слово дальше покрашено. Синий это der. Оранжевый это die. Зелёный это das. Через пять минут вы перестанете думать о цвете. Просто будете видеть.</p>
+  <div class="pal">
+    <div class="sw bg-das"><small>#2A5945</small><b>das</b><span>Brot, Wasser, Ei</span></div>
+    <div class="sw bg-die"><small>#F46907</small><b>die</b><span>Banane, Milch, Wurst</span></div>
+    <div class="sw bg-der"><small>#4677FF</small><b>der</b><span>Apfel, Käse, Kaffee</span></div>
+  </div>
+  <div class="pal-ex">
+    <button type="button" data-say="das Brot"><i>🍞</i><span class="das">das</span> Brot</button>
+    <button type="button" data-say="die Milch"><i>🥛</i><span class="die">die</span> Milch</button>
+    <button type="button" data-say="der Käse"><i>🧀</i><span class="der">der</span> Käse</button>
+    <button type="button" data-say="die Äpfel"><i>🍎</i><span class="die">die</span> Äpfel <small style="color:var(--mute)">мн. ч.</small></button>
+  </div>
+  <div class="note blue"><svg class="ic"><use href="#i-lightbulb"/></svg><span>Множественное число всегда <b class="die">die</b>. Поэтому оно тоже оранжевое. Одно правило без исключений. Наслаждайтесь.</span></div>
+  <div class="grid12" id="grid12" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+
+<!-- ============ ROUTE (sticky) ============ -->
+<nav class="route" aria-label="Маршрут по гайду">
+  <div class="rt-bar" id="rtBar">
+    <span class="rt-pill" id="rtPill"></span>
+    <a href="#verbs">Глаголы</a><a href="#glue">Склейки</a><a href="#shelves">Полки</a><a href="#gender">Род</a><a href="#taste">Вкус</a><a href="#pack">Упаковки</a><a href="#market">Рынок</a><a href="#phrases">Фразы</a><a href="#quiz">Тест</a><a href="#platform">Платформа</a>
+    <span class="rt-prog"><i id="rtProg"></i></span>
+  </div>
+</nav>
+
+<!-- ============ VERBS / DAY ============ -->
+<section class="board" id="verbs">
+  <div class="split">
+    <div>
+      <span class="anno"><b>01</b> Глаголы и время еды</span>
+      <h2 class="h2 split-h">Сначала глаголы. Без них еда просто лежит</h2>
+      <p class="lead">У немцев на каждый приём пищи свой глагол. Завтракать это одно слово. Обедать и ужинать это три. Так исторически сложилось. Солнце ниже покажет, когда что говорить.</p>
+      <div class="day-tabs" id="dayTabs"></div>
+    </div>
+    <div>
+      <div class="day" id="day">
+        <svg viewBox="0 0 360 230" aria-hidden="true">
+          <rect id="sky0" width="360" height="230" fill="#FFD9AE"/><rect id="sky1" width="360" height="230" fill="#A9DBF8" opacity="0"/><rect id="sky2" width="360" height="230" fill="#CDE6F7" opacity="0"/><rect id="sky3" width="360" height="230" fill="#F6A46B" opacity="0"/>
+          <use href="#cloud" class="cloud" x="40" y="40" width="70" height="30"/><use href="#cloud" class="cloud c2" x="240" y="60" width="56" height="24"/>
+          <path id="arc" d="M30 178C80 40 280 40 330 178" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="2" stroke-dasharray="4 6"/>
+          <g id="stops" fill="#fff"></g>
+          <g id="sun"><circle r="17" fill="#FFC94D"/><circle r="25" fill="#FFC94D" opacity=".25"/></g>
+          <path d="M0 176C70 150 130 166 190 158 250 150 300 162 360 156V230H0Z" fill="#83C76B"/>
+          <path d="M0 200C80 184 160 196 230 190 290 186 330 194 360 192V230H0Z" fill="#4E9F52"/>
+          <g transform="translate(150 162)"><rect x="0" y="12" width="60" height="34" fill="#fff"/><path d="M-6 14 30-10 66 14Z" fill="#F46907"/><rect x="24" y="26" width="12" height="20" fill="#2A5945"/><rect x="6" y="20" width="12" height="10" fill="#BFE3FA"/><rect x="42" y="20" width="12" height="10" fill="#BFE3FA"/></g>
+        </svg>
+      </div>
+      <div class="day-card" id="dayCard"><span class="t">07:00</span><span><b><span class="das">das</span> Frühstück</b><small>frühstücken · Ich frühstücke um sieben.</small></span><button class="say" type="button" data-say="Ich frühstücke um sieben." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+    </div>
+  </div>
+  <div class="verbs" id="verbList"></div>
+  <div class="note"><svg class="ic"><use href="#i-zap"/></svg><span><b>Подвох.</b> essen меняет гласную. Ich esse, но <b class="de">du isst, er isst</b>. Две s. Одна от корня, вторая от окончания. Выглядит как опечатка. Это не опечатка.</span></div>
+  <div class="note green"><svg class="ic"><use href="#i-utensils"/></svg><span>В 12:30 коллега в коридоре скажет <b class="de">Mahlzeit!</b> Это не вопрос про еду. Это привет в обеденное время. Отвечаете тем же. Всё.</span></div>
+</section>
+
+<!-- ============ GLUE (Komposita) ============ -->
+<section class="board" id="glue">
+  <div class="split">
+    <div>
+      <span class="anno"><b>02</b> Склейки</span>
+      <h2 class="h2 split-h">Немцы не придумывают новые слова. Они их склеивают</h2>
+      <p class="lead">Берут два старых слова. Ставят рядом. Готово. Картошка плюс каша. Получается пюре.</p>
+      <div class="note blue"><svg class="ic"><use href="#i-lightbulb"/></svg><span><b>Главное правило.</b> Род отдаёт последнее слово. Первое только уточняет, какое именно. Последнее решает, какой артикль.</span></div>
+    </div>
+    <div>
+      <div class="bld" id="bld" aria-live="polite">
+        <div class="bld-row"><span class="bc" id="bA"><span class="a die">die</span><span>Kartoffel</span></span><span class="bplus">+</span><span class="bc" id="bB"><span class="a der">der</span><span>Brei</span></span></div>
+        <div class="barrow"><svg class="ic"><use href="#i-arrow-down"/></svg></div>
+        <span class="bres" id="bR"><span class="a der" id="bRa">der</span><span id="bRw">Kartoffelbrei</span></span>
+        <div class="blit" id="bLit">буквально: <b>картошка + каша</b> → по-нашему: <b>пюре</b></div>
+        <div class="bnav"><button class="r" type="button" id="bPrev" aria-label="Назад"><svg class="ic" style="rotate:180deg"><use href="#i-arrow-right"/></svg></button><div class="dots" id="bDots"></div><button class="r" type="button" id="bNext" aria-label="Дальше"><svg class="ic"><use href="#i-arrow-right"/></svg></button><button class="say" type="button" id="bSay" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      </div>
+    </div>
+  </div>
+  <div class="blist" id="bList"></div>
+</section>
+
+<!-- ============ SHELVES ============ -->
+<section class="board sky" id="shelves">
+  <div class="sec-head">
+    <span class="anno"><b>03</b> Полки супермаркета</span>
+    <h2 class="h2 split-h">Идём по рядам. Как в Spar, только без очереди</h2>
+    <p class="lead">Выберите полку. Нажмите на карточку. Она скажет слово вслух. С артиклем. Повторяйте вслух тоже, соседи переживут.</p>
+  </div>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="shelf-head" id="shelfHead"></div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<!-- ============ GENDER SORTER ============ -->
+<section class="board" id="gender">
+  <div class="split">
+    <div>
+      <span class="anno"><b>04</b> Род по хвосту</span>
+      <h2 class="h2 split-h">Род можно угадать. Иногда. Смотрите на хвост</h2>
+      <p class="lead">Артикль всё равно учим вместе со словом. Но у части слов есть подсказка в конце. Сканер ниже ищет хвост и кидает слово в корзину.</p>
+      <div class="rules">
+        <div class="rule"><b class="das">-chen</b><small>всегда das. Brötchen, Hähnchen.</small></div>
+        <div class="rule"><b class="die">-beere</b><small>всегда die. Вся ягодная полка.</small></div>
+        <div class="rule"><b class="das">-fleisch</b><small>das. Потому что das Fleisch.</small></div>
+        <div class="rule"><b class="die">-e</b><small>чаще die. Banane, Tomate. Но der Käse.</small></div>
+      </div>
+    </div>
+    <div>
+      <div class="sorter" id="sorter">
+        <div class="s-stage" id="sStage"><span class="s-chip" id="sChip"><span class="a" id="sA">?</span><span><span id="sStem">Bröt</span><span class="e" id="sEnd">chen</span></span><span class="s-beam" id="sBeam"></span></span><span class="s-rule" id="sRule">Сканер ищет хвост слова</span></div>
+        <div class="baskets">
+          <div class="bk" data-g="der"><div class="bk-h bg-der">der <small id="cDer">0</small></div><div class="bk-l" id="lDer"></div></div>
+          <div class="bk" data-g="die"><div class="bk-h bg-die">die <small id="cDie">0</small></div><div class="bk-l" id="lDie"></div></div>
+          <div class="bk" data-g="das"><div class="bk-h bg-das">das <small id="cDas">0</small></div><div class="bk-l" id="lDas"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="note"><svg class="ic"><use href="#i-hand"/></svg><span><b>Но!</b> Obst и Gemüse это das. И у них нет множественного. Одно слово на всю корзину. <b class="de">Ein Kilo Obst</b>, а не «обсты». Нужен один фрукт, называйте фрукт: <b class="de">ein Apfel</b>.</span></div>
+</section>
+
+<!-- ============ TASTE ============ -->
+<section class="board" id="taste">
+  <span class="anno"><b>05</b> Вкус и состояние</span>
+  <h2 class="h2 split-h">Жизнь одного яблока в шести словах</h2>
+  <p class="lead" style="margin-bottom:22px">Двигайте ползунок. Яблоко созреет, потом пожалеет об этом. Каждое состояние это прилагательное, которое пригодится на рынке.</p>
+  <div class="applebox">
+    <div class="ap-stage">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <use href="#cloud" x="12" y="18" width="60" height="25"/><use href="#cloud" x="130" y="36" width="50" height="21"/>
+        <path d="M0 160C50 146 110 154 200 148V200H0Z" fill="#83C76B"/><path d="M0 178C70 168 140 176 200 172V200H0Z" fill="#4E9F52"/>
+        <ellipse cx="100" cy="172" rx="44" ry="7" fill="#2A5945" opacity=".25"/>
+        <g id="apGrp">
+          <path id="apBody" d="M100 72c-14-10-46-8-50 26-4 30 14 62 34 70 7 3 11 0 16 0s9 3 16 0c20-8 38-40 34-70-4-34-36-36-50-26Z" fill="#9BCB3C"/>
+          <path d="M72 92c-4 10-3 22 2 30" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".45" fill="none"/>
+          <g id="apSpots" opacity="0" fill="#5B4126"><circle cx="118" cy="110" r="9"/><circle cx="88" cy="136" r="6"/><circle cx="122" cy="140" r="4"/><circle cx="80" cy="104" r="3.5"/></g>
+          <path d="M100 74c0-10 2-18 8-24" stroke="#6B3E1E" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <path id="apLeaf" d="M106 58c10-14 26-14 32-10-6 12-20 16-32 10Z" fill="#4CAF50"/>
+        </g>
+      </svg>
+    </div>
+    <div class="ap-ui">
+      <div class="lbl"><b class="de" id="apW">grün</b><span id="apR">неспелое</span></div>
+      <div class="sent"><button class="say" type="button" id="apSay" data-say="Der Apfel ist noch grün." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span id="apS">Der Apfel ist noch grün.</span></div>
+      <input class="range" id="apRange" type="range" min="0" max="5" step="1" value="0" aria-label="Стадия яблока">
+      <div class="ticks"><span>grün</span><span>knackig</span><span>reif</span><span>saftig</span><span>weich</span><span>faul</span></div>
+    </div>
+  </div>
+  <div class="tastes" id="tastes"></div>
+  <div class="note green"><svg class="ic"><use href="#i-lightbulb"/></svg><span><b>Ловушка.</b> Пресный по-немецки <b class="de">fade</b>. Не путать с английским fade. Хотя пресная еда тоже немного угасает.</span></div>
+</section>
+
+<!-- ============ PACK ============ -->
+<section class="board sky" id="pack">
+  <span class="anno"><b>06</b> Упаковки</span>
+  <h2 class="h2 split-h">Не «молоко», а «пакет молока». Немцы считают упаковками</h2>
+  <p class="lead" style="margin-bottom:24px">По-русски можно купить «шоколадку». По-немецки покупают плитку шоколада. Список ниже вычёркивается сам. Как во сне.</p>
+  <div class="packbox">
+    <div class="phone" aria-label="Список покупок"><div class="scr"><div class="isl"></div>
+      <div class="sb"><span>9:41</span><span class="st"><svg viewBox="0 0 18 12"><use href="#sb-sig"/></svg><svg viewBox="0 0 16 12"><use href="#sb-wifi"/></svg><svg viewBox="0 0 27 12"><use href="#sb-bat"/></svg></span></div>
+      <div class="list-app">
+        <div class="la-h"><small>Samstag · Spar</small><b>Einkaufsliste <span class="cart"><svg class="ic"><use href="#i-shopping-cart"/></svg><em id="cartN">0</em></span></b><div class="la-p"><i id="laP"></i></div></div>
+        <div class="la-l" id="laL"></div>
+      </div>
+    </div></div>
+    <div>
+      <div class="packs" id="packs"></div>
+      <div class="note"><svg class="ic"><use href="#i-hand"/></svg><span><b>Но!</b> Упаковки считаются, вес нет. <b class="de">Zwei Flaschen Wasser</b>, но <b class="de">zwei Kilo Äpfel</b> и <b class="de">drei Stück Kuchen</b>. Kilo и Stück остаются в единственном. Им лень.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARKET ============ -->
+<section class="board" id="market">
+  <span class="anno"><b>07</b> Диалог на рынке</span>
+  <div class="mk">
+    <div class="dan">
+      <h2 class="h2 split-h" style="margin-bottom:18px">Суббота. Wochenmarkt. Иду за спаржей</h2>
+      <p>В мае в Австрии все идут за спаржей. Это не обсуждается.</p>
+      <p>Подхожу к прилавку. Продавщица в фартуке. Лет шестьдесят. Смотрит строго.</p>
+      <p>Говорю, что свежее. Говорит, всё.</p>
+      <p class="gap">Дальше по-немецки. Нажмите на реплику, она прозвучит.</p>
+      <div class="note blue"><svg class="ic"><use href="#i-lightbulb"/></svg><span><b class="de">Sonst noch etwas?</b> Что-нибудь ещё? Это скажут на любой кассе и у любого прилавка. Ответ: <b class="de">Nein, danke. Das war's.</b></span></div>
+      <p class="gap">Клубнику я съел сразу. Спаржу дома. Брату из Мархфельда привет.</p>
+    </div>
+    <div>
+      <div class="phone"><div class="scr"><div class="isl"></div>
+        <div class="sb"><span>9:41</span><span class="st"><svg viewBox="0 0 18 12"><use href="#sb-sig"/></svg><svg viewBox="0 0 16 12"><use href="#sb-wifi"/></svg><svg viewBox="0 0 27 12"><use href="#sb-bat"/></svg></span></div>
+        <div class="chat">
+          <div class="ch-h"><i>🥬</i><span><b>Wochenmarkt</b><small>● Stand 14 · Gemüse</small></span></div>
+          <div class="ch-l" id="chL"></div>
+        </div>
+      </div></div>
+      <div class="ch-ctl"><button class="btn sm" type="button" id="chPlay"><svg class="ic"><use href="#i-headphones"/></svg> Слушать весь диалог</button><button class="btn sm ghost" type="button" id="chAgain"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Заново</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHRASES ============ -->
+<section class="board sky" id="phrases">
+  <div class="sec-head">
+    <span class="anno"><b>08</b> Фразы за столом</span>
+    <h2 class="h2 split-h">Что говорят за немецким столом</h2>
+    <p class="lead">Восемь фраз. Хватит на ресторан, кафе, офис и бабушку. Звёзды показывают, как часто фраза пригодится.</p>
+  </div>
+  <div class="tcols" id="tcols"></div>
+</section>
+
+<!-- ============ FACTS ============ -->
+<section class="board" id="facts">
+  <div class="blog-h">
+    <div>
+      <span class="anno">Немного фактов</span>
+      <h2 class="h2 split-h">Чтобы было о чём поговорить за обедом</h2>
+    </div>
+    <div class="seg" id="seg"><button type="button" class="on" data-f="all">Все</button><button type="button" data-f="word">Слова</button><button type="button" data-f="life">Жизнь</button></div>
+  </div>
+  <div class="posts" id="posts"></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board sky" id="quiz">
+  <div class="sec-head center">
+    <span class="anno"><b>09</b> Проверка</span>
+    <h2 class="h2 split-h">Шесть вопросов. Без подглядывания в полки</h2>
+  </div>
+  <div class="quiz" id="qz"></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="board" id="faq">
+  <div class="sec-head center">
+    <span class="anno">FAQ</span>
+    <h2 class="h2 split-h">Частые вопросы. Коротко</h2>
+    <p class="lead">То, что спрашивают в комментариях под каждым постом про еду.</p>
+  </div>
+  <div class="faq">
+    <details open><summary>Сколько слов учить в самом начале?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Тридцать. Хлеб, вода, молоко, кофе, яблоко, картошка, сыр. То, что вы покупаете каждую неделю. Остальное доберёте в магазине, глядя на ценники.</p></details>
+    <details><summary>Как запомнить род, если правил мало?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Учить слово сразу с артиклем и цветом. Никогда отдельно. Плюс хвосты: -chen das, -beere die, -fleisch das. И склейки: род всегда у последнего слова.</p></details>
+    <details><summary>Почему Obst и Gemüse без множественного числа?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Это собирательные слова. Как у нас «зелень» или «посуда». Ein Kilo Obst, viel Gemüse. Нужен один предмет, называйте предмет: eine Banane, eine Gurke.</p></details>
+    <details><summary>Sahne, saure Sahne, Schmand. В чём разница?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sahne это сливки. Saure Sahne это сметана, обычно около 10%. Schmand тоже сметана, только жирнее, от 20%. Для борща подходят обе. Schlagsahne не подходит. Проверено.</p></details>
+    <details><summary>Как сказать, что я не ем мясо?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Ich bin Vegetarier. Для женщины Vegetarierin. В ресторане проще: Ohne Fleisch, bitte. Без мяса, пожалуйста. Понимают везде.</p></details>
+    <details><summary>Мороженое правда «лёд»?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Да. das Eis значит и лёд, и мороженое. В кафе Eis принесут в стаканчике. В баре в стакане с колой. Контекст спасает.</p></details>
+  </div>
+</section>
+
+<!-- ============ CHEAT ============ -->
+<section class="board sky" id="cheat">
+  <span class="anno">Шпаргалка</span>
+  <h2 class="h2 split-h" style="margin-bottom:22px">Вся тема на одном экране. Сделайте скриншот</h2>
+  <div class="cheat">
+    <div class="ch"><h3><svg class="ic"><use href="#i-sparkles"/></svg>Цвета</h3><p><b class="der">der</b> синий · <b class="die">die</b> оранжевый · <b class="das">das</b> зелёный. Множественное всегда <b class="die">die</b>.</p></div>
+    <div class="ch"><h3><svg class="ic"><use href="#i-utensils"/></svg>Глаголы</h3><p class="de">essen (du isst) · trinken · kochen · bestellen · frühstücken · zu Mittag essen · zu Abend essen</p></div>
+    <div class="ch"><h3><svg class="ic"><use href="#i-plus"/></svg>Склейки</h3><p>Род у последнего слова. <span class="de"><b class="die">die</b> Kartoffel + <b class="der">der</b> Brei → <b class="der">der</b> Kartoffelbrei</span></p></div>
+    <div class="ch"><h3><svg class="ic"><use href="#i-scan-line"/></svg>Хвосты</h3><p><b class="das">-chen</b> das · <b class="die">-beere</b> die · <b class="das">-fleisch</b> das · <b class="die">-e</b> чаще die (но <b class="der">der</b> Käse)</p></div>
+    <div class="ch"><h3><svg class="ic"><use href="#i-shopping-basket"/></svg>Без мн. числа</h3><p class="de">das Obst · das Gemüse · zwei Kilo · drei Stück. Но: zwei Flaschen, zwei Tafeln.</p></div>
+    <div class="ch"><h3><svg class="ic"><use href="#i-message-circle"/></svg>За столом</h3><p class="de">Guten Appetit! · Mahlzeit! · Ich hätte gern… · Zusammen oder getrennt? · Stimmt so. · Prost!</p></div>
+  </div>
+</section>
+
+
+
+
+<section class="dl plat" id="platform">
+  <div class="center">
+    <span class="badge on-blue or">Платформа Stellas · A0–C1</span>
+    <h2 class="h2" style="margin-top:14px">Этот гайд вы прочитали за 12 минут. На платформе таких 300+</h2>
+    <p class="lead">Грамматика, лексика по ситуациям, экзамены. Всё в одном месте, в Notion, работает даже без интернета. Платите один раз.</p>
+    <div class="hero-cta"><a class="btn white" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Получить доступ · 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a><a class="btn" href="#prices">Сравнить тарифы</a></div>
+  </div>
+  <div class="dl-art">
+    <svg class="land" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <use href="#cloud" class="cloud" x="250" y="40" width="140" height="58"/><use href="#cloud" class="cloud c2" x="800" y="80" width="120" height="50"/>
+      <g><rect x="230" y="150" width="5" height="120" fill="#fff"/><g class="blades" style="transform-origin:232.5px 150px"><path d="M232.5 150 228 92h9Z" fill="#fff"/><path d="M232.5 150 228 92h9Z" fill="#fff" transform="rotate(120 232.5 150)"/><path d="M232.5 150 228 92h9Z" fill="#fff" transform="rotate(240 232.5 150)"/></g><circle cx="232.5" cy="150" r="6" fill="#F46907"/></g>
+      <path d="M0 260C150 210 300 240 420 226 560 210 650 240 780 220 920 200 1060 236 1200 218V380H0Z" fill="#83C76B"/>
+      <g transform="translate(860 196)"><rect x="0" y="20" width="110" height="70" fill="#E04B3A"/><path d="M-8 22 55-24 118 22Z" fill="#B83226"/><rect x="40" y="48" width="30" height="42" fill="#fff"/><path d="M40 48 70 90M70 48 40 90" stroke="#E04B3A" stroke-width="3"/></g>
+      <path d="M0 300C180 266 330 284 470 276 640 266 760 296 900 274 1020 256 1120 276 1200 268V380H0Z" fill="#4E9F52"/>
+      <path d="M0 340C90 322 170 336 250 380H0Z" fill="#2A5945"/><path d="M1200 330C1110 318 1020 340 940 380h260Z" fill="#2A5945"/>
+    </svg>
+    <div class="phone"><div class="scr"><video class="vid" muted loop playsinline preload="none" data-poster="media/app-mobile.jpg" src="media/app-mobile.mp4"></video></div></div>
+  </div>
+</section>
+
+<section class="board" id="pains">
+  <span class="anno or">Знакомо?</span>
+  <h2 class="h2 split-h" style="margin-bottom:10px">Еду выучили. А дальше начинается жизнь</h2>
+  <p class="lead" style="margin-bottom:22px">Ресторан в Вене. Меню на немецком. Вы тычете пальцем в строчку и говорите das. Официант говорит sehr gut. Приносят Beuschel. Это лёгкое. Телячье. Вкусно, кстати. Но хотелось бы знать заранее.</p>
+  <div class="pains">
+    <div class="pain"><i>🍽️</i><div><b>Меню читается как шифр</b><p>Слова знакомые, а блюдо непонятное. Склейки, соусы, гарниры. На платформе есть лексика для ресторана с фразами и диалогами.</p></div></div>
+    <div class="pain"><i>🧑‍💼</i><div><b>Обед с коллегами и тишина</b><p>Зовут на Mittagessen, а вы говорите, что не голодны. На самом деле страшно поддерживать Smalltalk. Нужны готовые фразы, а не учебник.</p></div></div>
+    <div class="pain"><i>📞</i><div><b>Заказать столик по телефону</b><p>Без лица и жестов немецкий сразу сложнее. Гайды по ситуациям дают фразы под звонок: записаться к врачу, забронировать, перенести.</p></div></div>
+    <div class="pain"><i>🚇</i><div><b>Учите урывками, а сети нет</b><p>В U-Bahn, в очереди, в перерыве. Платформа в Notion, её можно открыть в приложении и заниматься офлайн.</p></div></div>
+  </div>
+</section>
+
+<section class="board sky">
+  <span class="anno">Что внутри</span>
+  <h2 class="h2 split-h" style="margin-bottom:22px">Не список слов. Система, которая ведёт от A0 до C1</h2>
+  <div class="feat">
+    <div class="fc"><div class="im"><div class="lap"><video class="vid" muted loop playsinline preload="none" data-poster="media/v-lexika.webp" src="media/v-lexika.mp4"></video></div></div><div class="bd"><h3>Лексика по темам и ситуациям</h3><p>Еда, ресторан, больница, транспорт, работа. Слова с озвучкой и транскрипцией, фразы, видео и упражнения.</p></div></div>
+    <div class="fc"><div class="im"><div class="lap"><video class="vid" muted loop playsinline preload="none" data-poster="media/v-gemini.webp" src="media/v-gemini.mp4"></video></div></div><div class="bd"><h3>Интерактивные гайды в Gemini</h3><p>Словарь с озвучкой, текст с переводом по клику, диалоги, тест с разбором и чат с ИИ-собеседником в образе.</p></div></div>
+    <div class="fc"><div class="im"><div class="lap"><video class="vid" muted loop playsinline preload="none" data-poster="media/v-notion.webp" src="media/v-notion.mp4"></video></div></div><div class="bd"><h3>Грамматика как на канале</h3><p>Объяснение, видео, упражнения и ответы с разбором, почему именно так. Темы идут по порядку уровней.</p></div></div>
+  </div>
+  <div class="nums">
+    <div class="num"><b><span class="count" data-to="300">300</span>+</b><small>гайдов по грамматике и лексике</small></div>
+    <div class="num"><b><span class="count" data-to="2500">2500</span>+</b><small>слов с озвучкой и транскрипцией</small></div>
+    <div class="num"><b><span class="count" data-to="5">5</span></b><small>экзаменов: Goethe, telc, DTZ, ÖSD, TestDaF</small></div>
+    <div class="num"><b><span class="count" data-to="100">100</span>+</b><small>студентов прошли наши разговорные клубы</small></div>
+  </div>
+  <div class="lvl">
+    <div class="lvl-h"><span>Трекер прогресса · пример</span><a href="#prices">Подробнее ›</a></div>
+    <div class="big">A2 <small>сейчас · цель B1 к лету</small></div>
+    <div class="bar"><i id="lvlBar"></i></div>
+    <div class="lvl-steps"><span class="on">A0</span><span class="on">A1</span><span class="on">A2</span><span>B1</span><span>B2</span><span>C1</span></div>
+    <div class="lvl-btn"><a class="btn ghost sm" href="#prices">Как это работает</a><a class="btn orange sm" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Начать путь</a></div>
+  </div>
+</section>
+
+<section class="board" id="reviews">
+  <span class="anno">Отзывы</span>
+  <h2 class="h2 split-h" style="margin-bottom:22px">Что говорят те, кто уже учится</h2>
+  <div class="revs">
+    <div class="rv"><p>«Самое крутое лично для меня это интерактивные тренажеры в новой лексике, где есть и словарик, и диалоги с вопросами и сразу ответами (и все с озвучкой). Я по одному из ваших тренажеров подготовилась к встрече, и на встрече действительно были такие вопросы и я смогла на них ответить!»</p><details><summary>Показать скриншот</summary><img src="media/rv2.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></details><div class="rv-f"><i>А</i><span><b>Ученица платформы</b><small>отзыв в Telegram</small></span></div></div>
+    <div class="rv"><p>«Платформа мне понравилась тем, что вся информация была грамотно укомплектована, очень классные объяснения и самое главное для меня это количество материала для самообучения.»</p><details><summary>Показать скриншот</summary><img src="media/rv3.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></details><div class="rv-f"><i style="background:#4ED08A">B</i><span><b>Ученица платформы</b><small>отзыв в Telegram</small></span></div></div>
+    <div class="rv"><p>«Из-за работы и учёбы у меня не всегда бывает точное время заниматься с учителем и в то же время хочется дальше улучшать язык. Мне больше всего нравится порядок грамматических тем и книги, которые там есть. Именно поэтому я второй раз купила у вас.»</p><details><summary>Показать скриншот</summary><img src="media/rv4.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></details><div class="rv-f"><i style="background:#F5A04B">А</i><span><b>Ученица платформы</b><small>отзыв в Telegram</small></span></div></div>
+  </div>
+</section>
+
+<section class="board sky" id="prices">
+  <div class="sec-head center">
+    <span class="anno">Тарифы</span>
+    <h2 class="h2 split-h">Один платёж. Доступ навсегда</h2>
+    <p class="lead">Обновления для купивших бесплатно. После новых функций цена для новых покупателей может вырасти.</p>
+  </div>
+  <div class="prices">
+    <div class="pr"><span class="lv">Платформа A0–A2</span><span class="pz">20 €</span><ul><li><svg class="ic"><use href="#i-check"/></svg>С нуля до уверенного A2</li><li><svg class="ic"><use href="#i-check"/></svg>Грамматика и лексика по ситуациям</li><li><svg class="ic"><use href="#i-check"/></svg>Трекер, карточки, упражнения</li></ul><a class="btn ghost" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Выбрать A0–A2</a></div>
+    <div class="pr main"><span class="tag">Выгоднее всего</span><span class="lv">Обе платформы A0–C1</span><span class="pz">30 €<s>40 €</s></span><ul><li><svg class="ic"><use href="#i-check"/></svg>Все 300+ гайдов от A0 до C1</li><li><svg class="ic"><use href="#i-check"/></svg>Интерактивные гайды в Gemini</li><li><svg class="ic"><use href="#i-check"/></svg>Экзамены: Goethe, telc, DTZ, ÖSD, TestDaF</li><li><svg class="ic"><use href="#i-check"/></svg>Фильмы, книги, подкасты по уровням</li><li><svg class="ic"><use href="#i-gift"/></svg>В подарок: A0–A2 на украинском</li></ul><a class="btn orange" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Получить A0–C1 за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+    <div class="pr"><span class="lv">Платформа B1–C1</span><span class="pz">20 €</span><ul><li><svg class="ic"><use href="#i-check"/></svg>Для тех, кто уже в теме</li><li><svg class="ic"><use href="#i-check"/></svg>Экзаменационные темы B2–C1</li><li><svg class="ic"><use href="#i-check"/></svg>ИИ-собеседник для практики</li></ul><a class="btn ghost" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Выбрать B1–C1</a></div>
+  </div>
+  <p class="ask">Остались вопросы? Пишите в Telegram <a href="https://t.me/stellasdeutsch" target="_blank" rel="noopener">@stellasdeutsch</a></p>
+</section>
+
+
+<footer class="foot"><img src="media/logo.webp" alt="" width="34" height="34" style="margin:0 auto 8px;border-radius:50%;background:#fff">Stellas · гайд «Еда на немецком» · 2026</footer>
+</div>
+</main>
+
+
+<div class="dock" id="dock" aria-hidden="true"><span><b>A0–C1 · 30 € навсегда</b><small>300+ гайдов, работает офлайн</small></span><a class="btn" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener" tabindex="-1">Хочу</a></div>
+
+
+<script>
+function essenInit(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G = window.gsap && window.ScrollTrigger ? window.gsap : null;
+  var AD = !!document.getElementById('platform');
+  if(G){ try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); window.MotionPathPlugin && G.registerPlugin(MotionPathPlugin); }catch(e){ G = null; } }
+  if(G){ document.documentElement.classList.add('gs'); ScrollTrigger.config({ignoreMobileResize:true}); }
+  var MP = G && window.MotionPathPlugin, ST = G && window.SplitText;
+  var anim = G && !reduce;
+  function $(s,r){ return (r||document).querySelector(s); }
+  function $$(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  var SAY = '<svg class="ic"><use href="#i-volume-2"/></svg>';
+
+  /* ---------- speech ---------- */
+  var tts = 'speechSynthesis' in window;
+  if(!tts) document.documentElement.classList.add('no-tts');
+  var deVoice = null;
+  function pickVoice(){ try{ var v = speechSynthesis.getVoices(); deVoice = v.find(function(x){return /^de/i.test(x.lang)}) || null; }catch(e){} }
+  if(tts){ pickVoice(); try{ speechSynthesis.onvoiceschanged = pickVoice; }catch(e){} }
+  function say(text, btn, onend){
+    if(!tts || !text){ onend && onend(); return; }
+    try{
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'de-DE'; u.rate = .88; if(deVoice) u.voice = deVoice;
+      if(btn) btn.classList.add('on');
+      u.onend = u.onerror = function(){ if(btn) btn.classList.remove('on'); onend && onend(); };
+      speechSynthesis.speak(u);
+    }catch(e){ onend && onend(); }
+  }
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-say]');
+    if(!b) return;
+    var btn = b.classList.contains('say') ? b : $('.say', b);
+    say(b.dataset.say, btn);
+    if(anim && !b.classList.contains('say')) G.fromTo(b, {scale:.94}, {scale:1, duration:.6, ease:'elastic.out(1.1,.4)', overwrite:'auto'});
+  });
+  function whenVisible(el, on, off, th){
+    if(!el) return;
+    if(!('IntersectionObserver' in window)){ on(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ en.isIntersecting ? on() : (off && off()); }); }, {threshold:th||.25}).observe(el);
+  }
+
+  /* ---------- headings ---------- */
+  if(anim && ST){
+    $$('.board .split-h').forEach(function(h){
+      var s = new SplitText(h, {type:'words', wordsClass:'wd'});
+      G.from(s.words, {yPercent:60, rotation:4, duration:.8, ease:'back.out(2)', stagger:.035, scrollTrigger:{trigger:h, start:'top 88%', once:true}});
+    });
+  }
+  if(anim){
+    ScrollTrigger.batch('.wc, .vb, .rule, .taste, .pk, .tc, .pc, .ch, .pain, .fc, .num, .rv, .pr, .faq details, .blist div', {
+      start:'top 92%', once:true,
+      onEnter:function(els){ G.from(els, {y:34, scale:.96, duration:.7, ease:'back.out(1.6)', stagger:.05, overwrite:true}); }
+    });
+    $$('.anno').forEach(function(a){ G.from(a, {x:-20, scale:.85, duration:.7, ease:'back.out(2.5)', scrollTrigger:{trigger:a, start:'top 92%', once:true}}); });
+    G.from('.hero-art .land', {yPercent:4, duration:1.4, ease:'power2.out'});
+  }
+
+  /* ---------- story ---------- */
+  var track = $('#stTrack'), dots = $$('#stDots i');
+  if(track){
+    track.addEventListener('scroll', function(){
+      var ph = $$('.phone', track), c = track.scrollLeft + track.clientWidth/2, best = 0, bd = 1e9;
+      ph.forEach(function(p,i){ var d = Math.abs(p.offsetLeft + p.offsetWidth/2 - c); if(d < bd){ bd = d; best = i; } });
+      dots.forEach(function(d,i){ d.classList.toggle('on', i===best); });
+    }, {passive:true});
+    if(anim){
+      G.from($$('.phone', track), {y:80, rotation:function(i){ return [-6,0,6][i]; }, duration:1, ease:'back.out(1.4)', stagger:.12, scrollTrigger:{trigger:track, start:'top 85%', once:true}});
+      $$('.phone', track).forEach(function(p){
+        G.from($$('.ln', p), {y:14, duration:.5, ease:'power2.out', stagger:.12, scrollTrigger:{trigger:p, start:'top 70%', once:true}});
+      });
+    }
+  }
+
+  /* ---------- palette grid ---------- */
+  var g12 = $$('#grid12 i');
+  if(g12.length && anim){
+    var gi = 6, gt = null;
+    whenVisible($('#grid12'), function(){ if(gt) return; gt = setInterval(function(){ g12[gi].classList.remove('on'); gi = (gi + 1 + Math.floor(Math.random()*4)) % 12; g12[gi].classList.add('on'); G.fromTo(g12[gi], {scaleY:.4}, {scaleY:1, duration:.5, ease:'back.out(3)'}); }, 1100); }, function(){ clearInterval(gt); gt = null; });
+    G.from('.pal .sw', {yPercent:40, duration:.9, ease:'back.out(1.6)', stagger:.1, scrollTrigger:{trigger:'.pal', start:'top 85%', once:true}});
+  }
+
+  /* ---------- route stepper ---------- */
+  var bar = $('#rtBar'), pill = $('#rtPill'), links = $$('a', bar), cur = -1;
+  function movePill(i){
+    if(i === cur || !links[i]) return; cur = i;
+    links.forEach(function(a,k){ a.classList.toggle('on', k===i); });
+    var a = links[i];
+    if(G){ G.to(pill, {x:a.offsetLeft, width:a.offsetWidth, duration:.55, ease:'back.out(1.5)'}); }
+    else { pill.style.transform = 'translateX(' + a.offsetLeft + 'px)'; pill.style.width = a.offsetWidth + 'px'; }
+    var target = a.offsetLeft - bar.clientWidth/2 + a.offsetWidth/2;
+    try{ bar.scrollTo({left:target, behavior:'smooth'}); }catch(e){ bar.scrollLeft = target; }
+  }
+  var secs = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  if('IntersectionObserver' in window){
+    var vis = {};
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(en){ vis[secs.indexOf(en.target)] = en.isIntersecting; });
+      for(var i=secs.length-1;i>=0;i--){ if(vis[i]){ movePill(i); break; } }
+    }, {rootMargin:'-35% 0px -55% 0px'});
+    secs.forEach(function(s){ s && io.observe(s); });
+  }
+  if(G){
+    var first = secs[0], last = secs[secs.length-1];
+    G.to('#rtProg', {scaleX:1, ease:'none', scrollTrigger:{trigger:first, start:'top 60%', endTrigger:last, end:'bottom 60%', scrub:.4}});
+  }
+  window.addEventListener('resize', function(){ var i = cur; cur = -1; movePill(i < 0 ? 0 : i); });
+
+  /* ---------- day arc ---------- */
+  var DAY = [
+    {t:'07:00', a:'das', n:'Frühstück', v:'frühstücken', s:'Ich frühstücke um sieben.', ru:'Я завтракаю в семь.', p:.08},
+    {t:'13:00', a:'das', n:'Mittagessen', v:'zu Mittag essen', s:'Ich esse um eins zu Mittag.', ru:'Обедаю в час.', p:.42},
+    {t:'16:00', a:'die', n:'Kaffeepause', v:'Kaffee trinken', s:'Um vier trinken wir Kaffee.', ru:'В четыре пьём кофе. С тортом.', p:.68},
+    {t:'19:00', a:'das', n:'Abendessen', v:'zu Abend essen', s:'Wir essen um sieben zu Abend.', ru:'Ужинаем в семь.', p:.94}
+  ];
+  var dayTabs = $('#dayTabs'), dayCard = $('#dayCard'), sun = $('#sun'), arc = $('#arc'), di = 0, dTimer = null, dayLen = arc.getTotalLength();
+  dayTabs.innerHTML = DAY.map(function(d,i){ return '<button type="button" data-i="'+i+'" class="'+(i?'':'on')+'">'+d.t+' · '+d.n+'</button>'; }).join('');
+  $('#stops').innerHTML = DAY.map(function(d){ var pt = arc.getPointAtLength(dayLen*d.p); return '<circle cx="'+pt.x.toFixed(1)+'" cy="'+pt.y.toFixed(1)+'" r="4"/>'; }).join('');
+  function sunAt(p){ var pt = arc.getPointAtLength(dayLen*p); sun.setAttribute('transform','translate('+pt.x+' '+pt.y+')'); }
+  sunAt(DAY[0].p);
+  var sunP = {p:DAY[0].p};
+  function setDay(i, fromUser){
+    var prev = di; di = i; var d = DAY[i];
+    $$('button', dayTabs).forEach(function(b,k){ b.classList.toggle('on', k===i); });
+    dayCard.innerHTML = '<span class="t">'+d.t+'</span><span><b><span class="'+d.a+'">'+d.a+'</span> '+d.n+'</b><small>'+d.v+' · '+d.s+'<br>'+d.ru+'</small></span><button class="say" type="button" data-say="'+d.s+'" aria-label="Озвучить">'+SAY+'</button>';
+    ['#sky0','#sky1','#sky2','#sky3'].forEach(function(s,k){ var el = $(s); if(G) G.to(el, {opacity:k===i?1:0, duration:1}); else el.setAttribute('opacity', k===i?1:0); });
+    if(anim){
+      G.to(sunP, {p:d.p, duration:1.4, ease:'power2.inOut', onUpdate:function(){ sunAt(sunP.p); }});
+      G.from(dayCard.children, {y:16, duration:.5, ease:'back.out(2)', stagger:.06});
+    } else { sunAt(d.p); }
+    if(fromUser){ clearInterval(dTimer); dTimer = null; }
+  }
+  $$('button', dayTabs).forEach(function(b){ b.onclick = function(){ setDay(+b.dataset.i, true); }; });
+  if(anim) whenVisible($('#day'), function(){ if(dTimer) return; dTimer = setInterval(function(){ setDay((di+1)%DAY.length); }, 3200); }, function(){ clearInterval(dTimer); dTimer = null; });
+  else { $('#sky0').setAttribute('opacity',1); }
+
+  var VERBS = [['🍽️','essen','есть · du isst'],['🥤','trinken','пить'],['🍳','kochen','готовить'],['📲','bestellen','заказывать'],['🛒','einkaufen','закупаться'],['🥄','probieren','пробовать']];
+  $('#verbList').innerHTML = VERBS.map(function(v){ return '<button class="vb" type="button" data-say="'+v[1]+'"><i>'+v[0]+'</i><span><b class="de">'+v[1]+'</b><small>'+v[2]+'</small></span></button>'; }).join('');
+
+  /* ---------- builder ---------- */
+  var B = [
+    ['die','Kartoffel','der','Brei','der','Kartoffelbrei','картошка + каша','пюре'],
+    ['der','Fisch','die','Suppe','die','Fischsuppe','рыба + суп','уха'],
+    ['die','Milch','der','Kaffee','der','Milchkaffee','молоко + кофе','кофе с молоком'],
+    ['der','Schlag','die','Sahne','die','Schlagsahne','удар + сливки','взбитые сливки'],
+    ['das','Brot','die','Zeit','die','Brotzeit','хлеб + время','перекус'],
+    ['die','Erde','die','Beere','die','Erdbeere','земля + ягода','клубника'],
+    ['das','Eis','der','Kaffee','der','Eiskaffee','лёд + кофе','кофе-гляссе']
+  ];
+  var bi = 0, bTl = null, bWait = null, bOn = false;
+  $('#bDots').innerHTML = B.map(function(_,i){ return '<i data-i="'+i+'"'+(i?'':' class="on"')+'></i>'; }).join('');
+  $('#bList').innerHTML = B.map(function(b){ return '<div><span class="de"><b class="'+b[0]+'">'+b[0]+'</b> '+b[1]+' + <b class="'+b[2]+'">'+b[2]+'</b> '+b[3]+' = <b class="'+b[4]+'">'+b[4]+'</b> <b>'+b[5]+'</b></span><small>'+b[7]+'</small></div>'; }).join('');
+  function bFill(i){
+    var b = B[i];
+    $('#bA').innerHTML = '<span class="a '+b[0]+'">'+b[0]+'</span><span>'+b[1]+'</span>';
+    $('#bB').innerHTML = '<span class="a '+b[2]+'">'+b[2]+'</span><span>'+b[3]+'</span>';
+    $('#bRa').className = 'a ' + b[4]; $('#bRa').textContent = b[4]; $('#bRw').textContent = b[5];
+    $('#bLit').innerHTML = 'буквально: <b>'+b[6]+'</b> → по-нашему: <b>'+b[7]+'</b>';
+    $('#bSay').dataset.say = b[4] + ' ' + b[5];
+    $$('#bDots i').forEach(function(d,k){ d.classList.toggle('on', k===i); });
+  }
+  function bPlay(i){
+    clearTimeout(bWait); if(bTl) bTl.kill();
+    bi = (i + B.length) % B.length; bFill(bi);
+    if(!anim) return;
+    var A = $('#bA'), Bc = $('#bB'), R = $('#bR'), Ra = $('#bRa'), aA = $('.a', A), aB = $('.a', Bc);
+    G.set([A,Bc,R,Ra,aA,aB,'.bplus','#bLit'], {clearProps:'transform'});
+    var sb = aB.getBoundingClientRect(), rb = Ra.getBoundingClientRect();
+    var dx = (sb.left - rb.left), dy = (sb.top - rb.top);
+    bTl = G.timeline({onComplete:function(){ if(bOn) bWait = setTimeout(function(){ bPlay(bi+1); }, 2400); }});
+    bTl.fromTo(A, {x:-90, rotation:-10, scale:.6}, {x:0, rotation:0, scale:1, duration:.7, ease:'back.out(2)'})
+       .fromTo(Bc, {x:90, rotation:10, scale:.6}, {x:0, rotation:0, scale:1, duration:.7, ease:'back.out(2)'}, '<.1')
+       .fromTo('.bplus', {scale:.3, rotation:-90}, {scale:1, rotation:0, duration:.5, ease:'back.out(3)'}, '<.2')
+       .fromTo(R, {scale:.3, y:-30}, {scale:.3, y:-30, duration:0})
+       .add(function(){ aA.classList.add('lost'); }, '+=.35')
+       .to(aA, {y:-6, rotation:-12, duration:.4, ease:'back.out(3)'}, '<')
+       .fromTo(aB, {scale:1}, {scale:1.35, duration:.3, yoyo:true, repeat:1, ease:'power2.out'}, '+=.15')
+       .to(A, {x:30, duration:.35, ease:'power2.in'}, '+=.05').to(Bc, {x:-30, duration:.35, ease:'power2.in'}, '<')
+       .to([A,Bc], {x:0, duration:.5, ease:'elastic.out(1,.4)'})
+       .to(R, {scale:1, y:0, duration:.8, ease:'elastic.out(1,.45)'}, '<')
+       .fromTo(Ra, {x:dx, y:dy}, MP ? {motionPath:{path:[{x:dx,y:dy},{x:dx/2,y:Math.min(dy,0)-60},{x:0,y:0}], curviness:1.4}, duration:.8, ease:'power2.inOut'} : {x:0, y:0, duration:.8}, '<.05')
+       .fromTo(Ra, {scale:1}, {scale:1.3, duration:.25, yoyo:true, repeat:1})
+       .fromTo('#bLit', {y:12}, {y:0, duration:.5, ease:'back.out(2)'}, '<');
+  }
+  $('#bNext').onclick = function(){ bPlay(bi+1); };
+  $('#bPrev').onclick = function(){ bPlay(bi-1); };
+  $$('#bDots i').forEach(function(d){ d.onclick = function(){ bPlay(+d.dataset.i); }; });
+  if(anim) whenVisible($('#bld'), function(){ if(bOn) return; bOn = true; bPlay(bi); }, function(){ bOn = false; clearTimeout(bWait); if(bTl) bTl.progress(1).kill(); }, .5);
+
+  /* ---------- shelves ---------- */
+  var S = [
+    {k:'Obst', ru:'Фрукты', e:'🍎', n:'<b class="das">das</b> Obst. Одно слово на всю вазу, множественного нет. Почти все фрукты <b class="die">die</b>. Кроме двух: <b class="der">der</b> Apfel и <b class="der">der</b> Pfirsich. Запомните этих двоих.', w:[
+      ['der','Apfel','die Äpfel','áпфэль','яблоко','🍎'],['die','Birne','-n','би́рнэ','груша','🍐'],['die','Banane','-n','бана́нэ','банан','🍌'],['die','Orange','-n','ора́нжэ','апельсин','🍊'],['die','Zitrone','-n','цитро́нэ','лимон','🍋'],['der','Pfirsich','-e','пфи́рзихь','персик','🍑'],['die','Kirsche','-n','ки́ршэ','вишня, черешня','🍒'],['die','Weintraube','-n','ва́йнтраубэ','виноград','🍇'],['die','Wassermelone','-n','ва́ссэрмелонэ','арбуз','🍉'],['die','Ananas','-','а́нанас','ананас','🍍'],['die','Kiwi','-s','ки́ви','киви','🥝'],['die','Mango','-s','ма́нго','манго','🥭']]},
+    {k:'Gemüse', ru:'Овощи', e:'🥕', n:'<b class="das">das</b> Gemüse. Тоже одно на всю корзину: viel Gemüse. Род у овощей скачет как хочет. Тут только учить с артиклем. Цвет поможет.', w:[
+      ['die','Tomate','-n','тома́тэ','помидор','🍅'],['die','Gurke','-n','гу́ркэ','огурец','🥒'],['die','Kartoffel','-n','карто́фэль','картофель','🥔'],['die','Karotte','-n','каро́ттэ','морковь (ещё die Möhre)','🥕'],['die','Zwiebel','-n','цви́бэль','лук','🧅'],['der','Knoblauch','–','кно́блаух','чеснок','🧄'],['der','Paprika','-s','па́прика','сладкий перец','🫑'],['der','Pilz','-e','пильц','гриб','🍄'],['der','Mais','–','ма́ис','кукуруза','🌽'],['der','Brokkoli','-s','бро́коли','брокколи','🥦'],['die','Aubergine','-n','обэржи́нэ','баклажан','🍆'],['der','Kürbis','-se','кю́рбис','тыква','🎃'],['die','Avocado','-s','авока́до','авокадо','🥑'],['der','Salat','-e','зала́т','салат','🥬']]},
+    {k:'Beeren', ru:'Ягоды', e:'🍓', n:'Самая честная полка в магазине. Все <b class="die">die</b>. Все на -beere. Множественное +n. Erdbeere это земляная ягода. Stachelbeere колючая. Немцы не заморачиваются.', w:[
+      ['die','Erdbeere','-n','э́рдбэрэ','клубника','🍓'],['die','Himbeere','-n','хи́мбэрэ','малина','#E2386A'],['die','Blaubeere','-n','бла́убэрэ','голубика','🫐'],['die','Heidelbeere','-n','ха́йдельбэрэ','черника','#3B3F8F'],['die','Brombeere','-n','бро́мбэрэ','ежевика','#2B2240'],['die','Johannisbeere','-n','йоха́нисбэрэ','смородина','#D3202F'],['die','Preiselbeere','-n','пра́йзельбэрэ','брусника','#B0182B'],['die','Stachelbeere','-n','шта́хельбэрэ','крыжовник','#9CC63A']]},
+    {k:'Milch & Ei', ru:'Молочка и яйца', e:'🧀', n:'Сметана это <b class="die">die</b> saure Sahne. Кислые сливки. Я проверял на борще. Schlagsahne не берите. Творог это <b class="der">der</b> Quark, а не сыр.', w:[
+      ['die','Milch','–','мильх','молоко','🥛'],['die','Butter','–','бу́ттэр','сливочное масло','🧈'],['der','Käse','–','кэ́зэ','сыр','🧀'],['der','Quark','–','кварк','творог','#F3EEE2'],['der','Joghurt','-s','йо́гурт','йогурт (бывает и das)','#F7F1E6'],['die','Sahne','–','за́нэ','сливки','#FFF8EC'],['die','Schlagsahne','–','шла́гзанэ','сливки для взбивания','#FFFDF7'],['die','saure Sahne','–','за́урэ за́нэ','сметана','#FBF5E9'],['der','Schmand','–','шманд','жирная сметана','#F6EFE0'],['das','Ei','-er','ай','яйцо','🥚']]},
+    {k:'Fleisch', ru:'Мясо', e:'🥩', n:'Всё на -fleisch это <b class="das">das</b>. Потому что последний кусок <b class="das">das</b> Fleisch. Hähnchen тоже <b class="das">das</b>. Из-за -chen. Курице всё равно.', w:[
+      ['das','Fleisch','–','фляйш','мясо','🥩'],['das','Rindfleisch','–','ри́ндфляйш','говядина','#B5462F'],['das','Schweinefleisch','–','шва́йнэфляйш','свинина','#E8907E'],['das','Hackfleisch','–','ха́кфляйш','фарш','#C2553F'],['das','Hähnchen','-','хэ́нхен','курица','🍗'],['der','Schinken','-','ши́нкэн','ветчина','#F09A9A'],['der','Speck','–','шпэк','бекон, сало','🥓'],['die','Wurst','die Würste','вурст','колбаса','#9E3B2F'],['das','Würstchen','-','вю́рстхен','сосиска','🌭'],['die','Bratwurst','die Bratwürste','бра́твурст','жареная колбаска','#8C4A2F']]},
+    {k:'Fisch', ru:'Рыба', e:'🐟', n:'Рыба в основном <b class="der">der</b>, как <b class="der">der</b> Fisch. Tintenfisch буквально «чернильная рыба». Кальмар обиделся бы. Но он не читает.', w:[
+      ['der','Fisch','-e','фиш','рыба','🐟'],['der','Lachs','-e','лакс','лосось','#F48A63'],['der','Thunfisch','-e','ту́нфиш','тунец','#B03A48'],['die','Forelle','-n','форэ́ллэ','форель','#8FA8B8'],['der','Hering','-e','хэ́ринг','сельдь','#7B8CA0'],['die','Garnele','-n','гарнэ́лэ','креветка','🦐'],['der','Tintenfisch','-e','ти́нтэнфиш','кальмар','🦑'],['der','Hummer','-','ху́ммэр','омар','🦞'],['die','Muschel','-n','му́шэль','мидия','🦪']]},
+    {k:'Brot', ru:'Хлеб и выпечка', e:'🥨', n:'-chen всегда <b class="das">das</b>: Brötchen, Plätzchen. Pfannkuchen в Берлине это пончик, а на юге блин. Уточняйте, прежде чем звать гостей.', w:[
+      ['das','Brot','-e','брот','хлеб','🍞'],['das','Brötchen','-','брё́тхен','булочка','#E3A65B'],['die','Brezel','-n','брэ́цэль','крендель','🥨'],['das','Vollkornbrot','-e','фо́лькорнброт','цельнозерновой хлеб','#8A5A2E'],['das','Croissant','-s','круасса́н','круассан','🥐'],['der','Kuchen','-','ку́хэн','пирог','🥧'],['die','Torte','-n','то́ртэ','торт','🎂'],['der','Keks','-e','кекс','печенье','🍪'],['der','Apfelstrudel','-','а́пфельштрудэль','яблочный штрудель','#D9A24E'],['der','Pfannkuchen','-','пфа́нкухэн','блин / пончик','🥞']]},
+    {k:'Süßes', ru:'Сладкое', e:'🍫', n:'Мороженое это <b class="das">das</b> Eis. То есть лёд. Скажете Eis в кафе, получите мороженое. Скажете Eis в баре, получите лёд. Оба раза довольны.', w:[
+      ['die','Schokolade','-n','шокола́дэ','шоколад','🍫'],['das','Eis','–','айс','мороженое (и лёд)','🍦'],['der','Bonbon','-s','бонбо́н','конфета, леденец','🍬'],['der','Lutscher','-','лу́тшэр','леденец на палочке','🍭'],['die','Praline','-n','прали́нэ','конфета с начинкой','#6B3F2A'],['das','Gummibärchen','-','гу́ммибэрхен','мармеладный мишка','#F2C230'],['der','Kaugummi','-s','ка́угумми','жвачка','#F6A6C1'],['das','Popcorn','–','по́пкорн','попкорн','🍿'],['der','Honig','–','хо́них','мёд','🍯'],['die','Marmelade','-n','мармела́дэ','джем','#C8203A']]},
+    {k:'Getränke', ru:'Напитки', e:'☕', n:'<b class="de">Mit oder ohne Kohlensäure?</b> С газом или без. Спросят всегда. Без газа это <b class="das">das</b> stille Wasser. Отвечайте сразу, официант ждёт.', w:[
+      ['das','Wasser','–','ва́ссэр','вода','💧'],['das','Mineralwasser','–','минэра́львассэр','минералка','#9FD3F2'],['der','Saft','die Säfte','зафт','сок','🧃'],['die','Apfelschorle','-n','а́пфельшорлэ','сок с газировкой','#F4C35A'],['der','Kaffee','-s','ка́фэ','кофе','☕'],['der','Tee','-s','тэ','чай','🍵'],['der','Kakao','-s','кака́о','какао','#7A4A2A'],['die','Limonade','-n','лимона́дэ','лимонад','🥤'],['das','Bier','-e','бир','пиво','🍺'],['der','Wein','-e','вайн','вино','🍷'],['der','Sekt','-e','зэкт','игристое','🥂']]}
+  ];
+  var tabs = $('#tabs'), cardsEl = $('#cards'), sh = $('#shelfHead'), si = 0;
+  tabs.innerHTML = S.map(function(s,i){ return '<button type="button" role="tab" data-i="'+i+'" class="'+(i?'':'on')+'" aria-selected="'+(i?'false':'true')+'"><span>'+s.e+'</span>'+s.k+'</button>'; }).join('');
+  function em(x, berry){ return x.charAt(0) !== '#' ? x : berry ? '<span class="berry" style="--c:'+x+'"><i></i><i></i><i></i></span>' : '<span class="blob" style="--c:'+x+'"></span>'; }
+  function drawShelf(i, animate){
+    si = i; var s = S[i];
+    $$('button', tabs).forEach(function(b,k){ b.classList.toggle('on', k===i); b.setAttribute('aria-selected', k===i); });
+    sh.innerHTML = '<h3>'+s.k+' <small>'+s.ru+' · '+s.w.length+' слов</small></h3><p>'+s.n+'</p>';
+    cardsEl.innerHTML = s.w.map(function(w){
+      var full = w[0] + ' ' + w[1];
+      return '<button type="button" class="wc" data-say="'+full+'"><span class="em">'+em(w[5], s.k==='Beeren')+'</span><span class="w de"><span class="a '+w[0]+'">'+w[0]+'</span>'+w[1]+'</span><span class="pl">мн.: '+w[2]+'</span><span class="tr">['+w[3]+']</span><span class="ru">'+w[4]+'</span><span class="say" aria-hidden="true">'+SAY+'</span></button>';
+    }).join('');
+    if(animate && anim){
+      G.from(sh.children, {y:16, duration:.5, ease:'back.out(2)', stagger:.06});
+      G.from($$('.wc', cardsEl), {y:30, scale:.9, rotation:function(){ return G.utils.random(-4,4); }, duration:.55, ease:'back.out(1.8)', stagger:.035});
+      G.from($$('.wc .em', cardsEl), {scale:.4, rotation:-30, duration:.7, ease:'elastic.out(1,.45)', stagger:.035, delay:.1});
+    }
+  }
+  $$('button', tabs).forEach(function(b){ b.onclick = function(){ drawShelf(+b.dataset.i, true); var t = b.offsetLeft - tabs.clientWidth/2 + b.offsetWidth/2; try{ tabs.scrollTo({left:t, behavior:'smooth'}); }catch(e){} }; });
+  drawShelf(0, false);
+
+  /* ---------- sorter ---------- */
+  var W = [
+    ['das','Bröt','chen','-chen → всегда das'],['die','Banan','e','на -e → чаще die'],['das','Rind','fleisch','-fleisch → das, как das Fleisch'],
+    ['die','Him','beere','-beere → всегда die'],['der','Kä','se','Но! der Käse. Хвост -e, а род der',1],['die','Tomat','e','на -e → чаще die'],
+    ['der','Apfel','saft','склейка → род у der Saft'],['das','Plätz','chen','-chen → das'],['die','Gurk','e','на -e → die'],['das','Hähn','chen','-chen → das. Даже курица']
+  ];
+  var CL = {der:'#4677FF', die:'#F46907', das:'#2A5945'};
+  var wi = 0, sOn = false, sTl = null, sWait = null, cnt = {der:0,die:0,das:0};
+  function sReset(){ cnt = {der:0,die:0,das:0}; ['Der','Die','Das'].forEach(function(k){ $('#l'+k).innerHTML=''; $('#c'+k).textContent='0'; }); }
+  function sPut(w){ var k = w[0].charAt(0).toUpperCase() + w[0].slice(1); cnt[w[0]]++; $('#c'+k).textContent = cnt[w[0]]; var sp = document.createElement('span'); sp.className = 'de'; sp.textContent = w[1]+w[2]; $('#l'+k).appendChild(sp); return sp; }
+  function sStep(){
+    if(!sOn) return;
+    if(wi >= W.length){ sWait = setTimeout(function(){ sReset(); wi = 0; sStep(); }, 2600); return; }
+    var w = W[wi++], chip = $('#sChip'), a = $('#sA'), end = $('#sEnd'), rule = $('#sRule');
+    a.textContent = '?'; a.style.color = ''; $('#sStem').textContent = w[1]; end.textContent = w[2]; end.classList.remove('hit'); end.style.background = '';
+    rule.textContent = 'Сканер ищет хвост…'; rule.classList.remove('but');
+    G.set(chip, {x:0, y:0, scale:1, rotation:0});
+    var bk = document.querySelector('.bk[data-g="'+w[0]+'"]'), cr = chip.getBoundingClientRect(), br = bk.getBoundingClientRect();
+    var tx = br.left + br.width/2 - (cr.left + cr.width/2), ty = br.top + 60 - (cr.top + cr.height/2);
+    sTl = G.timeline({onComplete:function(){ sWait = setTimeout(sStep, 350); }});
+    sTl.fromTo(chip, {y:-60, scale:.5}, {y:0, scale:1, duration:.55, ease:'back.out(2.2)'})
+       .fromTo('#sBeam', {left:'-30%'}, {left:'100%', duration:.7, ease:'power1.inOut'})
+       .add(function(){ end.classList.add('hit'); end.style.background = CL[w[0]]; rule.textContent = w[3]; if(w[4]) rule.classList.add('but'); })
+       .fromTo(end, {scale:1}, {scale:1.25, duration:.25, yoyo:true, repeat:1, ease:'power2.out'})
+       .fromTo(rule, {scale:.8}, {scale:1, duration:.5, ease:'elastic.out(1,.5)'}, '<')
+       .add(function(){ a.textContent = w[0]; a.style.color = CL[w[0]]; }, '+=.35')
+       .fromTo(a, {rotationX:90}, {rotationX:0, duration:.4, ease:'back.out(2)'})
+       .to(chip, MP ? {motionPath:{path:[{x:0,y:0},{x:tx*.5,y:Math.min(ty,0)-70},{x:tx,y:ty}], curviness:1.4}, scale:.45, rotation:tx>0?20:-20, duration:.85, ease:'power2.in'} : {x:tx, y:ty, scale:.45, duration:.8}, '+=.6')
+       .add(function(){ var sp = sPut(w); G.fromTo(bk, {scale:1}, {scale:1.06, duration:.2, yoyo:true, repeat:1}); G.from(sp, {scale:.3, y:-10, duration:.5, ease:'back.out(3)'}); })
+       .set(chip, {x:0, y:-60, scale:.5, rotation:0});
+  }
+  if(anim) whenVisible($('#sorter'), function(){ if(sOn) return; sOn = true; sStep(); }, function(){ sOn = false; clearTimeout(sWait); if(sTl){ sTl.progress(1).kill(); } }, .4);
+  else { W.forEach(sPut); }
+
+  /* ---------- apple ---------- */
+  var AP = [
+    ['grün','неспелое','Der Apfel ist noch grün.','#9BCB3C',1,0,'#4CAF50'],
+    ['knackig','хрустящее','Der Apfel ist knackig.','#D7C43A',1.03,0,'#4CAF50'],
+    ['reif','спелое','Jetzt ist er reif.','#F2603B',1.06,0,'#43A047'],
+    ['saftig','сочное','Er ist so saftig!','#E0332A',1.08,0,'#388E3C'],
+    ['weich','мягкое','Oh, er ist schon weich.','#B9573A',.97,.25,'#7CA34A'],
+    ['faul','гнилое','Der Apfel ist faul. Tschüss.','#8A6A3A',.9,1,'#9C8B4A']
+  ];
+  var apR = $('#apRange'), apAuto = null;
+  function apSet(i){
+    var s = AP[i];
+    $('#apW').textContent = s[0]; $('#apR').textContent = s[1]; $('#apS').textContent = s[2]; $('#apSay').dataset.say = s[2];
+    $('#apBody').setAttribute('fill', s[3]); $('#apLeaf').setAttribute('fill', s[6]);
+    $('#apGrp').style.transform = 'scale(' + s[4] + ',' + (i>=4 ? s[4]*.94 : s[4]) + ')';
+    $('#apSpots').style.opacity = s[5];
+    apR.value = i;
+    if(anim) G.fromTo('#apW', {y:10, scale:.8}, {y:0, scale:1, duration:.5, ease:'back.out(3)'});
+  }
+  apR.addEventListener('input', function(){ clearInterval(apAuto); apAuto = 'stop'; apSet(+apR.value); });
+  if(anim) whenVisible($('.applebox'), function(){ if(apAuto) return; var k = 0; apAuto = setInterval(function(){ k = (k+1) % AP.length; apSet(k); }, 1600); }, function(){ if(apAuto && apAuto !== 'stop'){ clearInterval(apAuto); apAuto = null; } });
+  var TA = [['🍬','süß','сладкий','Das ist süß.'],['🍋','sauer','кислый','Das ist sauer.'],['🧂','salzig','солёный','Das ist zu salzig.'],['🌶️','scharf','острый','Das ist mir zu scharf.'],['☕','bitter','горький','Der Kaffee ist bitter.'],['🍚','fade','пресный','Das ist ein bisschen fade.']];
+  $('#tastes').innerHTML = TA.map(function(t){ return '<button type="button" class="taste" data-say="'+t[3]+'"><i>'+t[0]+'</i><b class="de">'+t[1]+'</b><small>'+t[2]+'</small></button>'; }).join('');
+
+  /* ---------- shopping list ---------- */
+  var L = [['die','eine Flasche','Wasser','бутылка воды','💧'],['die','eine Tafel','Schokolade','плитка шоколада','🍫'],['das','ein Glas','Gurken','банка огурцов','🥒'],['die','eine Tüte','Chips','пачка чипсов','🍟'],['die','eine Packung','Milch','пакет молока','🥛'],['der','ein Becher','Joghurt','стаканчик йогурта','🥣'],['die','eine Dose','Mais','банка кукурузы','🌽'],['das','ein Netz','Zwiebeln','сетка лука','🧅'],['das','ein Stück','Käse','кусок сыра','🧀'],['die','eine Tube','Senf','тюбик горчицы','🌭']];
+  var laL = $('#laL');
+  laL.innerHTML = L.map(function(l){ return '<div class="li" data-say="'+l[1]+' '+l[2]+'"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><span class="em">'+l[4]+'</span><span><b class="de"><span class="'+l[0]+'">'+l[1]+'</span> '+l[2]+'</b><small>'+l[3]+'</small></span></div>'; }).join('');
+  var lis = $$('.li', laL), lk = 0, lOn = false, lT = null;
+  $('#packs').innerHTML = [['die','Flasche','бутылка','Wasser, Cola, Wein'],['die','Tafel','плитка','Schokolade'],['das','Glas','стеклянная банка','Gurken, Marmelade'],['die','Dose','жестяная банка','Mais, Thunfisch'],['die','Packung','упаковка, пакет','Milch, Nudeln, Mehl'],['der','Becher','стаканчик','Joghurt, Sahne'],['die','Tüte','пакетик','Chips, Gummibärchen'],['das','Netz','сетка','Zwiebeln, Orangen'],['die','Tube','тюбик','Senf, Zahnpasta']].map(function(p){ return '<button type="button" class="pk" data-say="'+p[0]+' '+p[1]+'"><b class="de"><span class="'+p[0]+'">'+p[0]+'</span> '+p[1]+'</b><small>'+p[2]+'</small><span class="de">'+p[3]+'</span></button>'; }).join('');
+  function lReset(){ lk = 0; lis.forEach(function(li){ li.classList.remove('done'); }); $('#cartN').textContent = '0'; $('#laP').style.width = '0'; }
+  function lStep(){
+    if(!lOn) return;
+    if(lk >= lis.length){ lT = setTimeout(function(){ lReset(); lStep(); }, 2600); return; }
+    var li = lis[lk++]; li.classList.add('done');
+    $('#cartN').textContent = lk; $('#laP').style.width = (lk/lis.length*100) + '%';
+    G.fromTo($('.ck', li), {scale:.4}, {scale:1, duration:.55, ease:'elastic.out(1,.4)'});
+    G.fromTo(li, {x:0}, {x:6, duration:.15, yoyo:true, repeat:1});
+    G.fromTo('.cart', {rotation:-12, scale:1.2}, {rotation:0, scale:1, duration:.6, ease:'elastic.out(1,.4)'});
+    lT = setTimeout(lStep, 900);
+  }
+  if(anim){
+    G.from(lis, {y:24, scale:.94, duration:.5, ease:'back.out(2)', stagger:.06, scrollTrigger:{trigger:laL, start:'top 85%', once:true}});
+    whenVisible(laL, function(){ if(lOn) return; lOn = true; lT = setTimeout(lStep, 800); }, function(){ lOn = false; clearTimeout(lT); }, .3);
+  } else { lis.forEach(function(li){ li.classList.add('done'); }); $('#cartN').textContent = lis.length; $('#laP').style.width = '100%'; }
+
+  /* ---------- market chat ---------- */
+  var C = [
+    [1,'Guten Morgen! Was ist heute frisch?','Доброе утро! Что сегодня свежее?'],
+    [0,'Alles. Spargel, Erdbeeren, Radieschen.','Всё. Спаржа, клубника, редиска.'],
+    [1,'Ist der Spargel aus Österreich?','Спаржа местная?'],
+    [0,'Aus dem Marchfeld. Von meinem Bruder.','Из Мархфельда. От моего брата.'],
+    [1,'Dann nehme ich ein Kilo, bitte.','Тогда кило, пожалуйста.'],
+    [0,'Sonst noch etwas?','Что-нибудь ещё?'],
+    [1,'Eine Schale Erdbeeren.','Лоточек клубники.'],
+    [0,'Zwölf Euro fünfzig. Brauchen Sie eine Tüte?','Двенадцать пятьдесят. Пакет нужен?'],
+    [1,'Nein, danke. Ich habe einen Korb.','Нет, спасибо. У меня корзина.'],
+    [0,'Dann bekommen Sie eine Erdbeere gratis.','Тогда вам клубничка бесплатно.']
+  ];
+  var chL = $('#chL');
+  chL.innerHTML = C.map(function(c){ return '<div class="bub'+(c[0]?' me':'')+'" data-say="'+esc(c[1])+'"><b>'+esc(c[1])+'</b><small>'+c[2]+'</small></div>'; }).join('') + '<div class="typing" id="typ"><i></i><i></i><i></i></div>';
+  var bubs = $$('.bub', chL), typ = $('#typ'), ck = 0, cT = null, cDone = false;
+  function chShow(n){ bubs.forEach(function(b,i){ b.classList.toggle('hide', i >= n); }); }
+  function chStep(){
+    if(ck >= bubs.length){ typ.classList.remove('show'); cDone = true; return; }
+    var b = bubs[ck];
+    chL.insertBefore(typ, b); typ.className = 'typing show' + (C[ck][0] ? ' me' : '');
+    cT = setTimeout(function(){
+      typ.classList.remove('show'); b.classList.remove('hide');
+      if(anim) G.from(b, {y:16, scale:.85, transformOrigin:C[ck][0] ? '100% 100%' : '0% 100%', duration:.45, ease:'back.out(2.2)'});
+      ck++; cT = setTimeout(chStep, 650);
+    }, 700);
+  }
+  function chStart(){ clearTimeout(cT); ck = 0; cDone = false; chShow(0); chStep(); }
+  if(anim){ chShow(0); var chStarted = false; whenVisible(chL, function(){ if(chStarted) return; chStarted = true; chStart(); }, null, .4); }
+  $('#chAgain').onclick = function(){ chStart(); };
+  $('#chPlay').onclick = function(){
+    clearTimeout(cT); chShow(bubs.length); typ.classList.remove('show'); var k = 0, btn = this; btn.classList.add('on');
+    (function next(){ if(k >= C.length){ btn.classList.remove('on'); bubs.forEach(function(b){ b.style.outline = ''; }); return; }
+      bubs.forEach(function(b,i){ b.style.outline = i===k ? '2px solid var(--orange)' : ''; });
+      say(C[k][1], null, function(){ k++; setTimeout(next, 250); }); })();
+  };
+
+  /* ---------- phrases ---------- */
+  var P = [
+    ['Guten Appetit!','Приятного аппетита!','Говорят все. Перед едой. Ответ: Danke, gleichfalls! Спасибо, взаимно.','👩','Мама','Дома, 19:00','5.0'],
+    ['Mahlzeit!','Приятного! (в обед)','Коллега в коридоре в 12:30. Это не про еду. Это привет. Отвечаете тем же.','🧑‍💼','Коллега','Офис, обед','4.8'],
+    ['Ich hätte gern einen Kaffee.','Мне, пожалуйста, кофе.','Вежливее, чем Ich will. Ich will звучит как ребёнок у полки со сладким.','🙋','Вы','Кафе','5.0'],
+    ['Lecker!','Вкусно!','Одно слово. Работает везде. Бабушка оценит.','👵','Бабушка','Воскресный обед','4.9'],
+    ['Das ist mir zu scharf.','Для меня слишком остро.','Zu значит слишком. Mir значит для меня. Повар не обидится.','🌶️','Гость','Döner-Imbiss','4.0'],
+    ['Zusammen oder getrennt?','Вместе или раздельно?','Официант про счёт. Не про отношения. Говорите getrennt и платите за своё.','🧑‍🍳','Официант','Ресторан, Вена','5.0'],
+    ['Stimmt so.','Сдачи не надо.','Счёт 18. Даёте 20. Говорите Stimmt so. Два евро остались на чай.','💶','Вы','Конец ужина','4.7'],
+    ['Prost!','Будем!','Чокаясь, смотрите в глаза. Иначе семь лет неудач. Так говорят. Проверять не советую.','🍻','Друг','Biergarten','5.0']
+  ];
+  $('#tcols').innerHTML = P.map(function(p){ return '<div class="tc"><q class="de" data-say="'+p[0]+'"><span>'+p[0]+'</span><button class="say" type="button" aria-label="Озвучить">'+SAY+'</button></q><span class="ru">'+p[1]+'</span><p>'+p[2]+'</p><div class="tc-f"><i>'+p[3]+'</i><span><b>— '+p[4]+'</b><small>'+p[5]+'</small></span><span class="rt"><svg class="ic"><use href="#i-star"/></svg>'+p[6]+'</span></div></div>'; }).join('');
+
+  /* ---------- facts ---------- */
+  var F = [
+    ['life','🍕','Немцы гуглят пиццу, а не рульку','По поисковым запросам в лидерах пицца, лазанья и спагетти болоньезе. Свиная рулька грустит в сторонке.','#F2C14E'],
+    ['word','🍦','das Eis это лёд. И мороженое','Одно слово на оба случая. В кафе принесут в стаканчике, в баре положат в колу.','#BFE3FA'],
+    ['life','🥬','Весной страна сходит с ума по спарже','Spargelzeit длится с апреля до конца июня. Белая спаржа, голландский соус, картошка. Это сезон, как у нас клубника.','#CFEFC4'],
+    ['word','🧃','Apfelschorle это склейка в стакане','Сок плюс газированная вода. Apfel + Schorle. Самый популярный напиток после воды на любом празднике.','#FBE3C4']
+  ];
+  var posts = $('#posts');
+  function drawPosts(f, animate){
+    if(G) G.killTweensOf($$('.pc em', posts));
+    posts.innerHTML = F.filter(function(x){ return f==='all' || x[0]===f; }).map(function(x){
+      return '<article class="pc"><div class="im" style="background:'+x[4]+'"><svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cloud" x="24" y="20" width="80" height="34"/><use href="#cloud" x="210" y="38" width="64" height="27"/><path d="M0 150C70 126 150 140 210 132 260 126 300 134 320 130V200H0Z" fill="#83C76B"/><path d="M0 172C80 160 170 168 240 164 290 160 310 166 320 164V200H0Z" fill="#4E9F52"/></svg><em>'+x[1]+'</em></div><div class="bd"><span class="badge '+(x[0]==='word'?'':'gr')+'" style="align-self:flex-start;box-shadow:none;background:#F3F5F8">'+(x[0]==='word'?'Слово':'Жизнь')+'</span><h3>'+x[2]+'</h3><p>'+x[3]+'</p><div class="mt"><span class="chip"><svg class="ic"><use href="#i-calendar"/></svg>Окт 2026</span><span class="chip"><svg class="ic"><use href="#i-clock"/></svg>1 мин</span></div></div></article>';
+    }).join('');
+    if(animate && anim) G.from($$('.pc', posts), {y:30, scale:.94, duration:.55, ease:'back.out(1.8)', stagger:.07});
+    if(anim) $$('.pc em', posts).forEach(function(e,i){ G.fromTo(e, {y:0}, {y:-8, duration:1.6+i*.2, ease:'sine.inOut', yoyo:true, repeat:-1}); });
+  }
+  drawPosts('all', false);
+  $$('#seg button').forEach(function(b){ b.onclick = function(){ $$('#seg button').forEach(function(x){ x.classList.toggle('on', x===b); }); drawPosts(b.dataset.f, true); }; });
+
+  /* ---------- quiz ---------- */
+  var Q = [
+    {q:'___ Apfel', o:['der','die','das'], c:0, x:'Почти все фрукты die. Но яблоко der. Как и der Pfirsich.', s:'der Apfel'},
+    {q:'___ Brötchen', o:['der','die','das'], c:2, x:'Хвост -chen. Всегда das. Даже если булочка мужественная.', s:'das Brötchen'},
+    {q:'die Kartoffel + der Brei = ___ Kartoffelbrei', o:['die','der','das'], c:1, x:'Род отдаёт последнее слово. der Brei, значит der Kartoffelbrei.', s:'der Kartoffelbrei'},
+    {q:'Сметана по-немецки это…', o:['Schlagsahne','saure Sahne','Quark'], c:1, x:'Кислые сливки. Schlagsahne для взбивания, Quark это творог. Розовый борщ не повторяем.', s:'saure Sahne'},
+    {q:'Zwei ___ Wasser, bitte.', o:['Flasche','Flaschen','Kilo'], c:1, x:'Бутылки считаются: zwei Flaschen. А вот Kilo и Stück остались бы в единственном.', s:'Zwei Flaschen Wasser, bitte.'},
+    {q:'Официант спрашивает: «Zusammen oder getrennt?» Он про…', o:['счёт','столик','блюда'], c:0, x:'Платите вместе или раздельно. В Германии и Австрии это нормально. Никто не обидится.', s:'Zusammen oder getrennt?'}
+  ];
+  var qz = $('#qz'), qi = 0, res = [];
+  function qbar(){ return '<div class="qbar">' + Q.map(function(_,i){ return '<i class="' + (res[i]===true?'ok':res[i]===false?'bad':i===qi?'cur':'') + '"></i>'; }).join('') + '</div>'; }
+  function drawQ(){
+    var it = Q[qi];
+    qz.innerHTML = qbar() + '<p class="qn">Вопрос ' + (qi+1) + ' из ' + Q.length + '</p>' +
+      '<p class="qq de">' + it.q.replace('___','<u id="blank">___</u>') + '</p>' +
+      '<div class="qo">' + it.o.map(function(o,i){ return '<button type="button" class="de" data-i="'+i+'">'+o+'</button>'; }).join('') + '</div>' +
+      '<div class="qx" id="qx"><svg class="ic"><use href="#i-brain"/></svg><span>Выберите вариант. Цвета вам в помощь, но их тут нет. Специально.</span></div>';
+    $$('.qo button', qz).forEach(function(b){ b.onclick = function(){ answer(+b.dataset.i); }; });
+    if(anim) G.from($$('.qo button', qz), {y:20, scale:.9, duration:.5, ease:'back.out(2)', stagger:.06});
+  }
+  function confetti(n){
+    if(!anim) return;
+    var colors = ['#4677FF','#F46907','#2A5945','#FFC94D','#fff','#8FB0FF'];
+    for(var i=0;i<n;i++){
+      var c = document.createElement('i'); c.className = 'conf'; c.style.background = colors[i%colors.length]; qz.appendChild(c);
+      G.fromTo(c, {x:0, y:0, rotation:0}, {x:G.utils.random(-260,260), y:G.utils.random(-220,180), rotation:G.utils.random(-540,540), opacity:0, duration:G.utils.random(1,1.8), ease:'power3.out', onComplete:(function(el){ return function(){ el.remove(); }; })(c)});
+    }
+  }
+  function answer(i){
+    var it = Q[qi], ok = i===it.c; res[qi] = ok;
+    var bs = $$('.qo button', qz);
+    bs.forEach(function(b){ b.disabled = true; var k=+b.dataset.i; if(k===it.c) b.classList.add('ok'); else if(k===i) b.classList.add('bad'); });
+    if(anim){ ok ? G.fromTo(bs[i], {scale:.85}, {scale:1, duration:.6, ease:'elastic.out(1,.4)'}) : G.fromTo(bs[i], {x:-8}, {x:0, duration:.5, ease:'elastic.out(1.2,.2)'}); }
+    var bl = $('#blank'); if(bl) bl.textContent = it.o[it.c];
+    var qx = $('#qx'); qx.classList.toggle('bad', !ok);
+    qx.innerHTML = '<svg class="ic"><use href="#i-' + (ok?'circle-check':'circle-x') + '"/></svg><span>' + (ok ? '<b>Верно.</b> ' : '<b>Мимо.</b> ') + it.x + '</span>';
+    if(ok) confetti(12);
+    say(it.s);
+    $('.qbar', qz).outerHTML = qbar();
+    var nb = document.createElement('button'); nb.className = 'btn white qnext'; nb.type = 'button';
+    nb.innerHTML = qi < Q.length-1 ? 'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-trophy"/></svg>';
+    nb.onclick = function(){ qi++; qi < Q.length ? drawQ() : done(); };
+    qz.appendChild(nb); nb.focus({preventScroll:true});
+  }
+  function done(){
+    var s = res.filter(Boolean).length;
+    var msg = s===6 ? 'Шесть из шести. Можно идти в Spar без списка.' : s>=4 ? 'Почти. Загляните ещё раз в полки и склейки.' : 'Нормально. Первый раз у всех так. Шпаргалка ниже, потом ещё раз.';
+    var link = AD ? '<a class="btn ghost" style="color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)" href="#platform">Ещё 300+ тем →</a>' : '<a class="btn ghost" style="color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)" href="#cheat">Шпаргалка →</a>';
+    qz.innerHTML = qbar() + '<div class="qres"><div class="score">'+s+'/6 <svg class="ic"><use href="#i-trophy"/></svg></div><p class="qq" style="margin-top:8px">'+msg+'</p><div class="cta-row"><button type="button" class="btn white" id="again"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Ещё раз</button>' + link + '</div></div>';
+    $('#again').onclick = function(){ qi = 0; res = []; drawQ(); };
+    if(anim){ G.from('.qres .score', {scale:.3, rotation:-20, duration:1, ease:'elastic.out(1,.4)'}); confetti(s*8); }
+  }
+  drawQ();
+
+  /* ---------- ad: counters, level bar, videos, dock ---------- */
+  $$('.count').forEach(function(c){
+    if(!anim) return;
+    var to = +c.dataset.to, o = {v:0};
+    G.to(o, {v:to, duration:1.6, ease:'power2.out', scrollTrigger:{trigger:c, start:'top 92%', once:true}, onUpdate:function(){ c.textContent = Math.round(o.v); }});
+  });
+  if($('#lvlBar') && anim) G.to('#lvlBar', {scaleX:.46, duration:1.6, ease:'power3.out', scrollTrigger:{trigger:'#lvlBar', start:'top 90%', once:true}});
+  if(anim && $('.dl-art .phone')) G.from('.dl-art .phone', {y:120, rotation:6, duration:1.2, ease:'back.out(1.3)', scrollTrigger:{trigger:'.dl-art', start:'top 85%', once:true}});
+  var pio = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ var v = en.target; if(v.dataset.poster) v.poster = v.dataset.poster; pio.unobserve(v); } }); }, {rootMargin:'900px 0px'}) : null;
+  $$('video.vid').forEach(function(v){ pio ? pio.observe(v) : (v.poster = v.dataset.poster); });
+  $$('video.vid').forEach(function(v){ whenVisible(v, function(){ try{ v.preload = 'auto'; var p = v.play(); p && p.catch(function(){}); }catch(e){} }, function(){ try{ v.pause(); }catch(e){} }); });
+  var dock = $('#dock'), priceSec = $('#prices');
+  if(dock && priceSec && 'IntersectionObserver' in window){
+    var pastHero = false, atPrice = false;
+    function upd(){ var s = pastHero && !atPrice; dock.classList.toggle('show', s); dock.setAttribute('aria-hidden', !s); $('a', dock).tabIndex = s ? 0 : -1; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ pastHero = !en.isIntersecting && en.boundingClientRect.top < 0; upd(); }); }).observe($('.hero'));
+    new IntersectionObserver(function(es){ es.forEach(function(en){ atPrice = en.isIntersecting; upd(); }); }).observe(priceSec);
+  }
+
+  function pillRefresh(){ var i = cur < 0 ? 0 : cur; cur = -1; movePill(i); }
+  window.addEventListener('load', function(){ if(G) ScrollTrigger.refresh(); pillRefresh(); });
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ if(G) ScrollTrigger.refresh(); pillRefresh(); });
+  movePill(0);
+}
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', essenInit); else essenInit();
+</script>
+
+</body>
+</html>
